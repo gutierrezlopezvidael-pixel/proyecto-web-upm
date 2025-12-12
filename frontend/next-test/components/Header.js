@@ -15,17 +15,23 @@ export default function Header() {
         <Link href="/" style={{ color: "white", textDecoration: "none" }}>
           Inicio
         </Link>
+
         <Link href="/about" style={{ color: "white", textDecoration: "none" }}>
           Acerca de
         </Link>
+
         <Link href="/services" style={{ color: "white", textDecoration: "none" }}>
           Servicios
         </Link>
-        <Link href="/contacto" style={{ color: "white", textDecoration: "none" }}>
+
+        <Link href="/carreras" style={{ color: "white", textDecoration: "none" }}>
+          Carreras
+        </Link>
+
+        <Link href="/contact" style={{ color: "white", textDecoration: "none" }}>
           Contacto
         </Link>
       </nav>
     </header>
   );
 }
-

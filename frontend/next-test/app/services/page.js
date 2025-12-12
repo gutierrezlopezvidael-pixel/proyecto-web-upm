@@ -1,25 +1,42 @@
-export default function Services() {
+export default function ServicesPage() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>Servicios</h1>
+    <>
+      <section className="about-hero" style={{ background: "#ff8c00" }}>
+        <h1>Servicios Institucionales</h1>
+        <p>Conoce los servicios que la UPM ofrece a su comunidad.</p>
+      </section>
 
-      <p>
-        En el Proyecto UPM 2.0 ofrecemos soluciones basadas en tecnologías web
-        modernas, enfocadas en rendimiento, seguridad y escalabilidad.
-      </p>
+      <section>
+        <h2>Servicios Académicos</h2>
+        <ul className="lista-servicios">
+          <li>Asesorías académicas personalizadas</li>
+          <li>Biblioteca y recursos digitales</li>
+          <li>Acceso a laboratorios especializados</li>
+          <li>Tutorías institucionales</li>
+        </ul>
+      </section>
 
-      <h2>Nuestros Servicios</h2>
-      <ul>
-        <li>Desarrollo de Sitios Web Estáticos</li>
-        <li>Implementación de WordPress Headless</li>
-        <li>Diseño de Interfaces (UI)</li>
-        <li>Optimización de Rendimiento Web</li>
-      </ul>
+      <section>
+        <h2>Servicios Administrativos</h2>
+        <ul className="lista-servicios">
+          <li>Control escolar</li>
+          <li>Gestión de constancias y documentos</li>
+          <li>Inscripciones y reinscripciones</li>
+        </ul>
+      </section>
 
-      <p>
-        Nuestro objetivo es aplicar buenas prácticas de desarrollo web en un
-        entorno académico profesional.
-      </p>
-    </main>
+      <section>
+        <h2>Servicios Estudiantiles</h2>
+        <ul className="lista-servicios">
+          <li>Actividades deportivas</li>
+          <li>Actividades culturales</li>
+          <li>Bienestar estudiantil</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2025 Universidad Politécnica Mesoamericana</p>
+      </footer>
+    </>
   );
 }

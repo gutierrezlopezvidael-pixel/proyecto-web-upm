@@ -1,18 +1,20 @@
 export default function Home() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>Proyecto UPM 2.0</h1>
-      <p>Arquitectura Híbrida Sin Cabeza</p>
+    <>
+      <section className="hero">
+        <h1>Universidad Politécnica Mesoamericana</h1>
+        <p>Comprometidos con la formación profesional y el desarrollo regional.</p>
+        <a className="btn" href="/about">Conócenos</a>
+      </section>
 
-      <h2>Secciones del sitio</h2>
-      <ul>
-        <li>Inicio</li>
-        <li>Acerca de</li>
-        <li>Servicios</li>
-        <li>Contacto</li>
-      </ul>
+      <section>
+        <h2>Noticias Recientes</h2>
+        <p>Próximamente se publicarán las noticias más importantes de la comunidad.</p>
+      </section>
 
-      <p>Este sitio se genera con Next.js en modo estático.</p>
-    </main>
+      <footer>
+        <p>© 2025 Universidad Politécnica Mesoamericana</p>
+      </footer>
+    </>
   );
 }

@@ -1,27 +1,52 @@
-export default function About() {
+export default function AboutPage() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>Acerca de Nosotros</h1>
+    <>
+      <section className="about-hero" style={{ background: "var(--verde-upm)" }}>
+        <h1>Acerca de la UPM</h1>
+        <p>Formando profesionistas que transforman su región y su entorno.</p>
+      </section>
 
-      <p>
-        El Proyecto UPM 2.0 es una iniciativa universitaria enfocada en la
-        reingeniería de un sitio web utilizando una arquitectura moderna,
-        rápida y segura.
-      </p>
+      <section>
+        <h2>¿Quiénes Somos?</h2>
+        <p>
+          La Universidad Politécnica Mesoamericana es una institución dedicada a la formación integral
+          de estudiantes mediante programas educativos de calidad, investigación aplicada y compromiso social.
+        </p>
+      </section>
 
-      <h2>Nuestro Objetivo</h2>
-      <p>
-        Implementar una arquitectura Headless Híbrida para separar el diseño
-        visual del manejo de contenidos.
-      </p>
+      <section className="about-block">
+        <h2>Misión</h2>
+        <p>
+          Ofrecer servicios educativos de nivel superior con un enfoque tecnológico, científico y humanista,
+          contribuyendo al desarrollo regional mediante profesionistas competentes e innovadores.
+        </p>
+      </section>
 
-      <h2>Tecnologías Usadas</h2>
-      <ul>
-        <li>WordPress Headless</li>
-        <li>Next.js</li>
-        <li>GitHub Actions</li>
-        <li>cPanel</li>
-      </ul>
-    </main>
+      <section className="about-block">
+        <h2>Visión</h2>
+        <p>
+          Ser una institución reconocida por su calidad académica, vinculación e impacto en la comunidad,
+          liderando la formación profesional en la región mesoamericana.
+        </p>
+      </section>
+
+      <section>
+  <h2>Valores Institucionales</h2>
+
+  <ul className="lista-valores">
+    <li>✔ Responsabilidad</li>
+    <li>✔ Honestidad</li>
+    <li>✔ Respeto</li>
+    <li>✔ Solidaridad</li>
+    <li>✔ Compromiso</li>
+    <li>✔ Ética</li>
+  </ul>
+</section>
+
+
+      <footer>
+        <p>© 2025 Universidad Politécnica Mesoamericana</p>
+      </footer>
+    </>
   );
 }

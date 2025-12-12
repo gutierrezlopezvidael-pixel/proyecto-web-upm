@@ -1,24 +1,32 @@
-export default function Contacto() {
+export default function ContactPage() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>Contacto</h1>
+    <>
+      <section className="about-hero" style={{ background: "var(--naranja-upm)" }}>
+        <h1>Contacto</h1>
+        <p>Ponte en contacto con la Universidad Politécnica Mesoamericana.</p>
+      </section>
 
-      <p>
-        Si deseas más información sobre el Proyecto UPM 2.0, puedes contactarnos
-        a través de los siguientes medios:
-      </p>
+      <section>
+        <h2>Información de Contacto</h2>
+        <p><strong>Dirección:</strong> Carretera Villahermosa - Frontera km 3.5, Tenosique, Tabasco</p>
+        <p><strong>Teléfono:</strong> (934) 342 0213</p>
+        <p><strong>Correo institucional:</strong> contacto@upm.edu.mx</p>
+      </section>
 
-      <h2>Datos de Contacto</h2>
-      <ul>
-        <li>Correo: upm2@universidad.edu</li>
-        <li>Teléfono: 55 1234 5678</li>
-        <li>Ubicación: Universidad Politécnica Metropolitana</li>
-      </ul>
+      <section>
+        <h2>Formulario de Mensaje</h2>
 
-      <p>
-        Estamos disponibles para resolver tus dudas sobre arquitectura Headless,
-        desarrollo web moderno y despliegue en cPanel.
-      </p>
-    </main>
+        <form className="formulario-contacto">
+          <input type="text" placeholder="Nombre completo" />
+          <input type="email" placeholder="Correo electrónico" />
+          <textarea placeholder="Escribe tu mensaje aquí"></textarea>
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>© 2025 Universidad Politécnica Mesoamericana</p>
+      </footer>
+    </>
   );
 }

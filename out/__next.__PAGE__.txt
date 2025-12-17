@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/42879de7b8087bc9.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"70wxQsw8_8HVooQLD9XAM","rsc":["$","$1","c",{"children":[[["$","section",null,{"className":"hero","children":[["$","h1",null,{"children":"Universidad Politécnica Mesoamericana"}],["$","p",null,{"children":"Comprometidos con la formación profesional y el desarrollo regional."}],["$","a",null,{"className":"btn","href":"/about","children":"Conócenos"}]]}],["$","section",null,{"children":[["$","h2",null,{"children":"Noticias Recientes"}],["$","p",null,{"children":"Próximamente se publicarán las noticias más importantes de la comunidad."}]]}],["$","footer",null,{"children":["$","p",null,{"children":"© 2025 Universidad Politécnica Mesoamericana"}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null

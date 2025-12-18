@@ -1,0 +1,341 @@
+/* ================================
+   PALETA DE COLORES UPM
+   ================================ */
+:root {
+  --verde-upm: #6FB341;
+  --morado-upm: #4E2A8E;
+  --naranja-upm: #F7941D;
+  --rojo-upm: #E03A3E;
+  --gris-oscuro: #333;
+  --gris-claro: #f2f2f2;
+  --blanco: #fff;
+}
+
+/* ================================
+   RESETEO GENERAL
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--gris-claro);
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+/* ================================
+   MENÚ CON LOGO UPM
+   ================================ */
+.menu {
+  background: var(--morado-upm);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-upm {
+  height: 65px;
+  width: auto;
+}
+
+.titulo-upm {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+nav a {
+  color: var(--blanco);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--naranja-upm);
+}
+
+/* ================================
+   SECCIÓN HERO
+   ================================ */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--naranja-upm);
+  color: var(--blanco);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero .btn {
+  background: var(--verde-upm);
+  color: var(--blanco);
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 25px;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: var(--morado-upm);
+  transform: scale(1.05);
+}
+
+/* ================================
+   SECCIONES GENERALES
+   ================================ */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: var(--verde-upm);
+  margin-bottom: 15px;
+  border-left: 6px solid var(--naranja-upm);
+  padding-left: 10px;
+}
+
+/* ================================
+   SECCIÓN ACERCA
+   ================================ */
+.about-hero {
+  background: var(--morado-upm);
+  color: var(--blanco);
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-block {
+  background: var(--blanco);
+  padding: 25px 20px;
+  border-left: 8px solid var(--naranja-upm);
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ================================
+   LISTA DE VALORES
+   ================================ */
+.lista-valores {
+  list-style: none;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.lista-valores li {
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.lista-valores li::before {
+  content: "•";
+  color: var(--morado-upm);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* ================================
+   SERVICIOS
+   ================================ */
+.lista-servicios {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 1.05rem;
+}
+
+.lista-servicios li {
+  margin-bottom: 8px;
+}
+
+/* ================================
+   FORMULARIO DE CONTACTO
+   ================================ */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.formulario-contacto textarea {
+  height: 120px;
+}
+
+.formulario-contacto button {
+  background: var(--morado-upm);
+  color: var(--blanco);
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background: var(--rojo-upm);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+footer {
+  background: var(--rojo-upm);
+  color: var(--blanco);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer section {
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  color: var(--blanco);
+  margin-bottom: 10px;
+}
+
+/* ================================
+   RESPONSIVIDAD
+   ================================ */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 10px;
+    display: block;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* ================================
+   IMÁGENES DE SECCIONES
+   ================================ */
+.img-seccion {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ================================
+   FORMULARIO DE ADMISIONES
+   ================================ */
+
+#formulario-admision {
+  max-width: 600px;
+  margin: 60px auto;
+  background: var(--blanco);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-admision h2 {
+  text-align: center;
+  color: var(--verde-upm);
+  margin-bottom: 10px;
+}
+
+#formulario-admision p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--gris-oscuro);
+}
+
+#formulario-admision form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#formulario-admision label {
+  font-weight: bold;
+  color: var(--gris-oscuro);
+}
+
+#formulario-admision input,
+#formulario-admision select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#formulario-admision input:focus,
+#formulario-admision select:focus {
+  outline: none;
+  border-color: var(--verde-upm);
+}
+
+/* BOTÓN */
+#formulario-admision button {
+  background: var(--verde-upm);
+  color: var(--blanco);
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+#formulario-admision button:hover {
+  background: var(--morado-upm);
+}

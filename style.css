@@ -122,8 +122,19 @@ nav a:hover {
 
 .hero-slider {
   position: relative;
-  height: 85vh;
+  height: 70vh;
   overflow: hidden;
+}
+
+.hero-content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: var(--blanco);
+max-width: 90%;
+z-index: 2;
 }
 
 .slides {
@@ -141,7 +152,6 @@ nav a:hover {
   display: none;
 }
 
-}
 
 /* ================================
    SECCIONES GENERALES
@@ -323,6 +333,20 @@ footer h3 {
   #menu-toggle:checked + .menu-icon + nav {
     display: flex;
   }
+
+/*=========AJUSTES HERO PARA CELULAR========*/
+.hero-slider{
+  height: 60vh;
+}
+
+.hero-content h1{
+font-size: 1.8rem;
+}
+
+.hero-slogan{
+  font-size: 1.3rem;
+}
+
 }
 
 /* ================================

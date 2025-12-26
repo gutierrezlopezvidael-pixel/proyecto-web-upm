@@ -1,9 +1,9 @@
 /* ================================
    PALETA DE COLORES UPM
-   ================================ */
+================================ */
 :root {
   --verde-upm: #6FB341;
-  --morado-upm: #2E2A77; /* Morado-azul institucional */
+  --morado-upm: #2E2A77;
   --naranja-upm: #F7941D;
   --gris-oscuro: #333;
   --gris-claro: #f2f2f2;
@@ -12,7 +12,7 @@
 
 /* ================================
    RESETEO GENERAL
-   ================================ */
+================================ */
 * {
   margin: 0;
   padding: 0;
@@ -28,13 +28,14 @@ body {
 
 /* ================================
    HEADER / MENÚ
-   ================================ */
+================================ */
 .menu {
   background: var(--morado-upm);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-container {
@@ -44,18 +45,18 @@ body {
 }
 
 .logo-upm {
-  height: 65px;
+  height: 60px;
 }
 
 .titulo-upm {
   color: var(--blanco);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 /* ================================
    NAVEGACIÓN
-   ================================ */
+================================ */
 nav {
   display: flex;
   gap: 20px;
@@ -63,133 +64,170 @@ nav {
 
 nav a {
   color: var(--blanco);
-  margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
-  font-size: 0.95rem;   /* para que “Oferta Educativa” quepa */
+  font-size: 0.95rem;
   white-space: nowrap;
+  transition: 0.3s;
 }
-
 
 nav a:hover {
   color: var(--naranja-upm);
 }
 
 /* ================================
-   HERO / PORTADA
-   ================================ */
-.hero {
-  background: var(--naranja-upm);
-  color: var(--blanco);
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.1rem;
-}
-
-.hero .btn {
-  background: var(--verde-upm);
-  color: var(--blanco);
-  padding: 12px 25px;
-  border-radius: 25px;
-  display: inline-block;
-  margin-top: 25px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.hero .btn:hover {
-  background: var(--morado-upm);
-  transform: scale(1.05);
-}
-
-
-  /* ================================
-   HERO / PORTADA 2
-   ================================ */
-
-.hero-slider {
-  position: relative;
-  height: 70vh;
-  overflow: hidden;
-}
-
-.hero-content{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-color: var(--blanco);
-max-width: 90%;
-z-index: 2;
-}
-
-.slides {
-  height: 100%;
-}
-
-.slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* tipo portada */
-}
-
-/* solo muestra la primera imagen */
-.slides img:not(:first-child) {
+   MENÚ HAMBURGUESA
+================================ */
+#menu-toggle {
   display: none;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: var(--blanco);
+  cursor: pointer;
+}
+
+/* ================================
+   HERO / IMAGEN PORTADA
+================================ */
+.hero-slider {
+  height: 65vh;
+  overflow: hidden;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================================
+   HERO / TEXTO DEBAJO
+================================ */
+.hero-info {
+  background: var(--blanco);
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero-info h1 {
+  color: var(--morado-upm);
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-slogan {
+  color: var(--verde-upm);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-descripcion {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+}
+
+/* ================================
+   BOTONES
+================================ */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--verde-upm);
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  background: var(--morado-upm);
+  transform: translateY(-3px);
+}
+
+.btn-secundario {
+  background: var(--morado-upm);
+}
+
+.btn-secundario:hover {
+  background: var(--verde-upm);
+}
+
+/* ================================
+   HERO - BLOQUES DE ACCIÓN
+================================ */
+.hero-acciones {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.hero-bloque {
+  max-width: 320px;
+  text-align: center;
+}
+
+.hero-bloque p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
 
 /* ================================
    SECCIONES GENERALES
-   ================================ */
+================================ */
 section {
   padding: 50px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
 section h2 {
   color: var(--verde-upm);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-left: 6px solid var(--naranja-upm);
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 /* ================================
-   IMÁGENES DE SECCIÓN
-   ================================ */
+   IMÁGENES
+================================ */
 .img-seccion {
   width: 100%;
-  max-width: 800px;
+  max-width: 450px;
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 /* ================================
-   NOTICIAS
-   ================================ */
-.noticias {
-  padding: 50px 20px;
+   LISTAS
+================================ */
+ul {
+  padding-left: 20px;
+  margin-top: 15px;
 }
 
+ul li {
+  margin-bottom: 10px;
+}
+
+/* ================================
+   NOTICIAS
+================================ */
 .noticias-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
@@ -216,63 +254,8 @@ section h2 {
 }
 
 /* ================================
-   FORMULARIO DE ADMISIONES
-   ================================ */
-#formulario-admision {
-  max-width: 600px;
-  margin: 60px auto;
-  background: var(--blanco);
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-#formulario-admision h2 {
-  text-align: center;
-  color: var(--verde-upm);
-}
-
-#formulario-admision p {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-#formulario-admision form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#formulario-admision label {
-  font-weight: bold;
-}
-
-#formulario-admision input,
-#formulario-admision select {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-#formulario-admision button {
-  background: var(--verde-upm);
-  color: var(--blanco);
-  padding: 14px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-#formulario-admision button:hover {
-  background: var(--morado-upm);
-}
-
-/* ================================
    FOOTER
-   ================================ */
+================================ */
 footer {
   background: var(--verde-upm);
   color: var(--blanco);
@@ -281,44 +264,18 @@ footer {
   margin-top: 40px;
 }
 
-footer section {
-  margin-bottom: 20px;
-}
-
-footer h3 {
-  margin-bottom: 10px;
-}
-
-/* ================================
-   MENÚ HAMBURGUESA (CSS PURO)
-   ================================ */
-#menu-toggle {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 2rem;
-  color: var(--blanco);
-  cursor: pointer;
-}
-
 /* ================================
    RESPONSIVE
-   ================================ */
+================================ */
 @media (max-width: 768px) {
-  .menu {
-    flex-wrap: wrap;
-  }
-
   .menu-icon {
     display: block;
   }
 
   nav {
     width: 100%;
-    flex-direction: column;
     display: none;
+    flex-direction: column;
     background: var(--morado-upm);
     margin-top: 15px;
     text-align: center;
@@ -333,73 +290,99 @@ footer h3 {
     display: flex;
   }
 
-/*=========AJUSTES HERO PARA CELULAR========*/
-.hero-slider{
-  height: 60vh;
-}
+  .hero-slider {
+    height: 45vh;
+  }
 
-.hero-content h1{
-font-size: 1.8rem;
-}
+  .hero-info h1 {
+    font-size: 1.8rem;
+  }
 
-.hero-slogan{
-  font-size: 1.3rem;
-}
-
+  .hero-slogan {
+    font-size: 1.2rem;
+  }
 }
 
 /* ================================
-   BOTONES UPM
+   TIPOGRAFÍA INSTITUCIONAL
+================================ */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+h2, h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  letter-spacing: 0.5px;
+}
+
+/* ================================
+   SECCIONES CONÓCENOS
+================================ */
+.seccion,
+section {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+/* ================================
+   MENSAJE DEL RECTOR Y TEXTO GENERAL
 ================================ */
 
-.btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: var(--verde-upm);
-  color: var(--blanco);
-  text-decoration: none;
+/* Párrafos generales */
+section p {
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1.75;
   font-size: 1.05rem;
-  font-weight: bold;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Hover principal */
-.btn:hover {
-  background: var(--morado-upm);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+/* Imagen del rector */
+.img-seccion {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  margin: 30px auto;
+  border-radius: 10px;
 }
 
-/* Botón secundario */
-.btn-secundario {
-  background: var(--morado-upm);
-}
-
-.btn-secundario:hover {
-  background: var(--verde-upm);
+/* Firma del rector (ÚNICO TEXTO CENTRADO) */
+.firma-rector {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 /* ================================
-   HERO - BLOQUES DE ACCIÓN
+   LISTAS INSTITUCIONALES
 ================================ */
-
-.hero-acciones {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 35px;
-  flex-wrap: wrap;
+section ul {
+  margin-top: 20px;
+  padding-left: 20px;
 }
 
-.hero-bloque {
-  max-width: 320px;
-  text-align: center;
-}
-
-.hero-bloque p {
+section ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
   font-size: 1rem;
-  margin-bottom: 15px;
-  line-height: 1.5;
+}
+
+/* ================================
+   RESPONSIVE – CELULAR
+================================ */
+@media (max-width: 768px) {
+
+  section p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .img-seccion {
+    max-width: 260px;
+  }
+
+  section h2 {
+    text-align: center;
+  }
 }

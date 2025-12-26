@@ -1,125 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto UPM 2.0</title>
-    <meta name="description" content="Arquitectura Headless Híbrida" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universidad Politécnica Mesoamericana</title>
+  <meta name="description" content="Proyecto UPM 2.0 - Sitio institucional" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
+<body>
 
-    <!-- MENÚ INSTITUCIONAL UPM -->
-    <header class="menu">
-      <div class="logo-container">
-       <img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm" />
-        <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
+  <!-- ================================
+       MENÚ INSTITUCIONAL
+  ================================ -->
+  <header class="menu">
+
+  <div class="logo-container">
+    <img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm" />
+    <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
+  </div>
+
+  <!-- BOTÓN HAMBURGUESA -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <!-- MENÚ -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="about.html">Conócenos</a>
+    <a href="services.html">Servicios</a>
+    <a href="carreras.html">Oferta Educativa</a>
+    <a href="contact.html">Contacto</a>
+    <a href="registro.html">Admisiones</a>
+  </nav>
+
+</header>
+
+
+  <!-- ================================
+       CONTENIDO PRINCIPAL
+  ================================ -->
+  <main>
+
+    <!-- IMAGEN DE PORTADA -->
+<section class="hero-slider">
+  <div class="slides">
+    <img src="assets/img/campus4.JPG" alt="Campus UPM">
+  </div>
+</section>
+
+<!-- CONTENIDO PRINCIPAL -->
+<section class="hero-info">
+  <h1>Universidad Politécnica Mesoamericana</h1>
+  <h2 class="hero-slogan">Educar para producir.</h2>
+
+  <p class="hero-descripcion">
+    En la UPM formamos profesionistas con visión tecnológica, compromiso social
+    y las competencias necesarias para transformar su entorno.
+  </p>
+
+  <div class="hero-acciones">
+    <div class="hero-bloque">
+      <p>
+        Conoce nuestra historia, misión, valores y el compromiso que tenemos
+        con la educación de calidad en la región.
+      </p>
+      <a href="about.html" class="btn">Conócenos</a>
+    </div>
+
+    <div class="hero-bloque">
+      <p>
+        Da el primer paso hacia tu futuro profesional y forma parte de la
+        comunidad universitaria UPM.
+      </p>
+      <a href="registro.html" class="btn btn-secundario">Admisiones</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- NOTICIAS -->
+    <section class="noticias">
+      <h2>Noticias Recientes</h2>
+
+      <div class="noticias-grid">
+        <article class="noticia">
+          <img src="assets/img/noticia1.jpg" alt="Inicio de clases UPM">
+          <h3>Inicio del nuevo ciclo escolar</h3>
+          <p>
+            La UPM da la bienvenida a los estudiantes de nuevo ingreso
+            para el ciclo académico 2025-2027.
+          </p>
+        </article>
+
+        <article class="noticia">
+          <img src="assets/img/noticia2.jpg" alt="Evento académico">
+          <h3>Reina UPM</h3>
+          <p>
+            Las aspirantes a Reina UPM 2025 no solo destacan por su presencia, sino también por su liderazgo,
+             conciencia ecológica y participación activa, es así como se presentan ante 
+             las autoridades de esta máxima casa de estudios superiores UPM, M.C. José Cisneros Domínguez Rector de esta universidad.
+          </p>
+        </article>
       </div>
+    </section>
 
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="/about">Conócenos</a>
-        <a href="/services">Servicios</a>
-        <a href="/carreras">Carreras</a>
-        <a href="/contact">Contacto</a>
-      </nav>
-    </header>
+  </main>
 
-    <main>
-    <!-- SECCIÓN PRINCIPAL / HERO -->
-  <section class="hero">
-    <h1>Universidad Politécnica Mesoamericana</h1>
+  <!-- ================================
+       FOOTER
+  ================================ -->
+  <footer>
+    <section>
+      <h3>Dirección</h3>
+      <p>
+        Carretera Tenosique – El Ceibo Km 43.5 S/N,  
+        Colonia Agrícola Sueños de Oro, Tenosique, Tabasco, México.  
+        C.P. 86906
+      </p>
+    </section>
+
     <p>
-      Comprometidos con la formación profesional y el desarrollo regional,
-      impulsando una educación de calidad con visión tecnológica.
+      © 2025 Universidad Politécnica Mesoamericana.  
+      Todos los derechos reservados.
     </p>
-    <a href="/about" class="btn">Conócenos</a>
-  </section>
+  </footer>
 
-  <!-- SECCIÓN INFORMATIVA -->
-  <section>
-    <h2>Proyecto UPM 2.0</h2>
-    <p>
-      El Proyecto UPM 2.0 es una iniciativa universitaria enfocada en la
-      reingeniería del sitio web institucional, utilizando una arquitectura
-      moderna, rápida y segura que mejora la experiencia de estudiantes,
-      docentes y visitantes.
-    </p>
-  </section>
-
-  <!-- SECCIÓN NOTICIAS -->
-  <section>
-    <h2>Noticias Recientes</h2>
-    <p>
-      Próximamente se publicarán las noticias más importantes de la comunidad
-      universitaria.
-    </p>
-  </section>
-    </main>
-
-    <footer>
-  <section>
-    <h3>Dirección</h3>
-    <p>
-      Carretera Tenosique – El Ceibo Km 43.5 S/N, Colonia Agrícola Sueños de Oro,
-      Tenosique, Tabasco, México. C.P. 86906
-    </p>
-  </section>
-
-  <section>
-    <h3>Datos de Contacto</h3>
-    <p>
-      Teléfono Institucional: +52 934 342 46 71 <br />
-      Teléfono Difusión: +52 934 262 48 44 <br />
-      Email Difusión: difusion@upm.edu.mx <br />
-      Email Rectoría: rectoria@upm.edu.mx <br />
-      Email Administración y Finanzas: administrativo@upm.edu.mx
-    </p>
-  </section>
-<!-- SECCIÓN INFORMATIVA -->
-  <section>
-    <h2>"Conoce tu Universidad"/h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.800294882908!2d-91.42699812578851!3d17.46927000044297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f390a2780280b1%3A0x80e65323c56126a2!2sUniversidad%20Polit%C3%A9cnica%20Mesoamerica!5e0!3m2!1ses!2smx!4v1766704967625!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cSYWtQeKFyU?si=E88U8CWwn9FK9eUx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>https://www.facebook.com/upmdifusion/
-https://www.instagram.com/politecnica__mesoamericana/
-https://x.com/upmcomunicacion
-
-
-+52 934 262 4844
-Hola, necesito información sobre las inscripciones.
-
-
-¿Cuáles son los costos de inscripción?
-Es de $1,211.00 
-
-¿Ofrecen becas?
-Sí, contamos con becas académicas y socioeconómicas.
-
-¿Qué horarios de clases manejan?
-
-
-¿Dónde se encuentra ubicada la universidad?
-
-¿Las carreras tienen validez oficial ante la SEP?
-
-¿Puedo revalidar materias si vengo de otra institución?
-
-¿Qué documentos necesito para inscribirme?
-
-¿Cuentan con modalidad en línea o híbrida?
-
-¿La universidad ofrece prácticas profesionales y servicio social?
-
-¿Cómo puedo iniciar mi proceso de inscripción? </p>
-  </section>
-  <p>© 2025 Universidad Politécnica Mesoamericana. Todos los derechos reservados.</p>
-</footer>
-
-
-
-  </body>
+</body>
 </html>

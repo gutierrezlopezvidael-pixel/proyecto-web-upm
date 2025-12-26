@@ -1,19 +1,32 @@
 /* ================================
    PALETA DE COLORES UPM
+<<<<<<< HEAD
    ================================ */
 :root {
   --verde-upm:#6FB341;
   --morado-upm: #4E2A8E;
   --naranja-upm: #F7941D;
   --rojo-upm: #E03A3E;
+=======
+================================ */
+:root {
+  --verde-upm: #6FB341;
+  --morado-upm: #2E2A77;
+  --naranja-upm: #F7941D;
+>>>>>>> 64dba1291bc0935d418273dc6e6feb9c7e3c2089
   --gris-oscuro: #333;
   --gris-claro: #f2f2f2;
   --blanco: #fff;
 }
 
 /* ================================
+<<<<<<< HEAD
    RESETEO
    ================================ */
+=======
+   RESETEO GENERAL
+================================ */
+>>>>>>> 64dba1291bc0935d418273dc6e6feb9c7e3c2089
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +37,7 @@
 body {
   background: var(--gris-claro);
   color: var(--gris-oscuro);
+<<<<<<< HEAD
 }
 
 /* ================================
@@ -220,12 +234,24 @@ footer {
    MENÚ CON LOGO UPM
    ================================ */
 
+=======
+  line-height: 1.6;
+}
+
+/* ================================
+   HEADER / MENÚ
+================================ */
+>>>>>>> 64dba1291bc0935d418273dc6e6feb9c7e3c2089
 .menu {
   background: var(--morado-upm);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
+=======
+  flex-wrap: wrap;
+>>>>>>> 64dba1291bc0935d418273dc6e6feb9c7e3c2089
 }
 
 .logo-container {
@@ -235,6 +261,7 @@ footer {
 }
 
 .logo-upm {
+<<<<<<< HEAD
   height: 65px; 
   width: auto;
 }
@@ -244,4 +271,346 @@ footer {
   font-size: 1.4rem;
   font-weight: bold;
   color: var(--blanco);
+=======
+  height: 60px;
+}
+
+.titulo-upm {
+  color: var(--blanco);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ================================
+   NAVEGACIÓN
+================================ */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--naranja-upm);
+}
+
+/* ================================
+   MENÚ HAMBURGUESA
+================================ */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: var(--blanco);
+  cursor: pointer;
+}
+
+/* ================================
+   HERO / IMAGEN PORTADA
+================================ */
+.hero-slider {
+  height: 65vh;
+  overflow: hidden;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================================
+   HERO / TEXTO DEBAJO
+================================ */
+.hero-info {
+  background: var(--blanco);
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero-info h1 {
+  color: var(--morado-upm);
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-slogan {
+  color: var(--verde-upm);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-descripcion {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+}
+
+/* ================================
+   BOTONES
+================================ */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--verde-upm);
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  background: var(--morado-upm);
+  transform: translateY(-3px);
+}
+
+.btn-secundario {
+  background: var(--morado-upm);
+}
+
+.btn-secundario:hover {
+  background: var(--verde-upm);
+}
+
+/* ================================
+   HERO - BLOQUES DE ACCIÓN
+================================ */
+.hero-acciones {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.hero-bloque {
+  max-width: 320px;
+  text-align: center;
+}
+
+.hero-bloque p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* ================================
+   SECCIONES GENERALES
+================================ */
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  color: var(--verde-upm);
+  margin-bottom: 20px;
+  border-left: 6px solid var(--naranja-upm);
+  padding-left: 12px;
+}
+
+/* ================================
+   IMÁGENES
+================================ */
+.img-seccion {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ================================
+   LISTAS
+================================ */
+ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* ================================
+   NOTICIAS
+================================ */
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.noticia {
+  background: var(--blanco);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.noticia img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.noticia h3 {
+  padding: 10px;
+  color: var(--morado-upm);
+}
+
+.noticia p {
+  padding: 0 10px 15px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  background: var(--verde-upm);
+  color: var(--blanco);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background: var(--morado-upm);
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: flex;
+  }
+
+  .hero-slider {
+    height: 45vh;
+  }
+
+  .hero-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.2rem;
+  }
+}
+
+/* ================================
+   TIPOGRAFÍA INSTITUCIONAL
+================================ */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+h2, h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  letter-spacing: 0.5px;
+}
+
+/* ================================
+   SECCIONES CONÓCENOS
+================================ */
+.seccion,
+section {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+/* ================================
+   MENSAJE DEL RECTOR Y TEXTO GENERAL
+================================ */
+
+/* Párrafos generales */
+section p {
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+/* Imagen del rector */
+.img-seccion {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+/* Firma del rector (ÚNICO TEXTO CENTRADO) */
+.firma-rector {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* ================================
+   LISTAS INSTITUCIONALES
+================================ */
+section ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ================================
+   RESPONSIVE – CELULAR
+================================ */
+@media (max-width: 768px) {
+
+  section p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .img-seccion {
+    max-width: 260px;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+>>>>>>> 64dba1291bc0935d418273dc6e6feb9c7e3c2089
 }

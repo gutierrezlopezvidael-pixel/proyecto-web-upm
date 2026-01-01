@@ -90,17 +90,16 @@ nav a:hover {
 }
 
 /* ================================
-   HERO / IMAGEN PORTADA
+   HERO / IMAGEN PORTADA (CORREGIDO)
 ================================ */
 .hero-slider {
-  height: 65vh;
-  overflow: hidden;
+  width: 100%;
 }
 
 .hero-slider img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;        /* 👈 CLAVE */
+  display: block;
 }
 
 /* ================================
@@ -233,6 +232,24 @@ section p {
   font-size: 1.05rem;
   line-height: 1.6;
 }
+
+/* ================================
+   IMAGEN DEL RECTOR (RESPONSIVE)
+================================ */
+
+.rector-imagen {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.rector-imagen img {
+  width: 100%;
+  max-width: 480px;   /* 👈 controla tamaño en computadora */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 
 /* ================================
    LISTAS INSTITUCIONALES
@@ -375,6 +392,11 @@ footer > p {
   .img-seccion {
     max-width: 260px;
   }
+
+  .rector-imagen img {
+  max-width: 90%;
+}
+
 }
 
 /* ================================
@@ -576,7 +598,9 @@ footer h3 {
 .carrera ul {
   margin-top: 15px;
   padding-left: 20px;
+  list-style: none; /* 👈 ESTA LÍNEA ES LA CLAVE */
 }
+
 
 .carrera ul li {
   font-size: 1rem;
@@ -678,4 +702,63 @@ footer h3 {
     width: 28px;
     height: 28px;
   }
+}
+
+/* ================================
+   FAQ - ACORDEÓN
+================================ */
+
+.faq {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.faq h2 {
+  color: var(--verde-upm);
+  margin-bottom: 30px;
+  border-left: 6px solid var(--naranja-upm);
+  padding-left: 12px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-pregunta {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 18px 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--morado-upm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-respuesta p {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.faq-item.activo .faq-respuesta {
+  max-height: 300px;
+}
+
+.flecha {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.activo .flecha {
+  transform: rotate(180deg);
 }

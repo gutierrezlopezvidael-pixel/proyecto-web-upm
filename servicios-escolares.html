@@ -42,12 +42,13 @@
   </div>
 
   <!-- BOTÓN HAMBURGUESA -->
-  <input type="checkbox" id="menu-toggle" />
+   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" class="menu-icon">
     ☰
   </label>
 
-  <nav aria-label="Menú principal">
+  <nav class="nav-menu" aria-label="Menú principal">
+    <label for="menu-toggle" class="cerrar-menu">✕</label>
   <ul class="menu-principal">
   <li><a href="index.html">Inicio</a></li>
 
@@ -67,14 +68,31 @@
 
   <li><a href="admisiones.html">Admisiones</a></li>
 
-  <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
+  <li><a href="servicios-escolares.html"class="activo">Servicios Escolares</a></li>
 
-  <li><a href="transparencia.html">Transparencia</a></li>
+  <li class="submenu">
+  <a href="#">Vinculación ▾</a>
+  <ul class="dropdown">
+    <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+    <li><a href="conocer.html">Conocer</a></li>
+  </ul>
+</li>
 
   <li><a href="contact.html">Contacto</a></li>
 </ul>
 </nav>
 </header>
+
+<!-- BANNER -->
+<section class="banner">
+    <div class="slider">
+
+        <img src="assets/banner/banner1.jpeg" class="slide active">
+        <img src="assets/banner/banner2.jpeg" class="slide">
+        <img src="assets/banner/banner3.png" class="slide">
+
+    </div>
+</section>
 
     <main>
   <!-- SECCIÓN: Inscripción y Reinscripción -->
@@ -209,6 +227,8 @@
 >
   <img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
 </a>
+
+<script src="faq.js"></script>
 
   </body>
 </html>

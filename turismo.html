@@ -20,9 +20,12 @@
   </div>
 
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">☰</label>
+  <label for="menu-toggle" class="menu-icon">
+    ☰
+  </label>
 
-  <nav aria-label="Menú principal">
+  <nav  class="nav-menu" aria-label="Menú principal">
+    <label for="menu-toggle" class="cerrar-menu">✕</label>
     <ul class="menu-principal">
       <li><a href="index.html">Inicio</a></li>
 
@@ -41,7 +44,15 @@
       <li><a href="carreras.html">Oferta Educativa</a></li>
       <li><a href="admisiones.html">Admisiones</a></li>
       <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
-      <li><a href="transparencia.html">Transparencia</a></li>
+      
+<li class="submenu">
+  <a href="#">Vinculación ▾</a>
+  <ul class="dropdown">
+    <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+    <li><a href="conocer.html">Conocer</a></li>
+  </ul>
+</li>
+
       <li><a href="contact.html">Contacto</a></li>
     </ul>
   </nav>

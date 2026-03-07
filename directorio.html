@@ -17,22 +17,25 @@
     <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
   </div>
 
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">☰</label>
+   <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+    ☰
+  </label>
 
-  <nav aria-label="Menú principal">
+  <nav class="nav-menu" aria-label="Menú principal">
+    <label for="menu-toggle" class="cerrar-menu">✕</label>
   <ul class="menu-principal">
   <li><a href="index.html">Inicio</a></li>
 
   <li class="submenu">
-  <a href="#">Nuestra Universidad ▾</a>
+  <a href="#" class="activo" >Nuestra Universidad ▾</a>
   <ul class="dropdown">
     <li><a href="mensaje-del-rector.html">Mensaje del Rector</a></li>
     <li><a href="quienes-somos.html">Quiénes Somos</a></li>
     <li><a href="mision-vision-valores.html">Misión y Visión </a></li>
     <li><a href="historia.html">Historia</a></li>
     <li><a href="organigrama-institucional.html">Organigrama Institucional</a></li>
-    <li><a href="directorio.html">Directorio</a></li>
+    <li><a href="directorio.html"class="activo">Directorio</a></li>
   </ul>
 </li>
 
@@ -42,7 +45,13 @@
 
   <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
 
-  <li><a href="transparencia.html">Transparencia</a></li>
+ <li class="submenu">
+  <a href="#">Vinculación ▾</a>
+  <ul class="dropdown">
+    <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+    <li><a href="conocer.html">Conocer</a></li>
+  </ul>
+</li>
 
   <li><a href="contact.html">Contacto</a></li>
 </ul>
@@ -50,13 +59,24 @@
 
 </header>
 
+<!-- BANNER -->
+<section class="banner">
+    <div class="slider">
+
+        <img src="assets/banner/banner1.jpeg" class="slide active">
+        <img src="assets/banner/banner2.jpeg" class="slide">
+        <img src="assets/banner/banner3.png" class="slide">
+
+    </div>
+</section>
+
 <main class="contenedor-about">
 
 <section class="seccion directorio">
 <h1>Directorio Institucional</h1>
 
 <!-- RECTORÍA -->
-<h2 class="area-titulo">Rectoría</h2>
+<h2>Rectoría</h2>
 <div class="grid-directorio">
 
   <div class="card-persona">
@@ -83,7 +103,7 @@
 </div>
 
 <!-- SECRETARÍA ACADÉMICA -->
-<h2 class="area-titulo">Secretaría Académica</h2>
+<h2>Secretaría Académica</h2>
 <div class="grid-directorio">
 
   <div class="card-persona">
@@ -110,7 +130,7 @@
 </div>
 
 <!-- ADMINISTRACIÓN -->
-<h2 class="area-titulo">Secretaría de Administración y Finanzas</h2>
+<h2>Secretaría de Administración y Finanzas</h2>
 <div class="grid-directorio">
 
   <div class="card-persona">
@@ -143,5 +163,7 @@
   <p>© 2025 Universidad Politécnica Mesoamericana.</p>
 </footer>
 
+
+<script src="faq.js"></script>
 </body>
 </html>

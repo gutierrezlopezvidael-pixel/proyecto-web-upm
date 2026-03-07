@@ -1,58 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!-- =========================
+        HEAD / METADATOS
+========================= -->
 <head>
-  <meta charset="UTF-8">
-  <title>Quiénes Somos | Universidad Politécnica Mesoamericana</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+
+<title>Quiénes Somos | Universidad Politécnica Mesoamericana</title>
+
+<meta name="description" content="Conoce la historia, objetivos y modelo educativo de la Universidad Politécnica Mesoamericana.">
+<meta name="keywords" content="UPM, Universidad Politécnica Mesoamericana, quiénes somos, universidad en Tabasco">
+<meta name="author" content="Universidad Politécnica Mesoamericana">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quiénes Somos | Universidad Politécnica Mesoamericana">
+<meta property="og:description" content="Conoce la misión educativa y el modelo de formación de la Universidad Politécnica Mesoamericana.">
+<meta property="og:image" content="https://4.innova-tech.com.mx/assets/share-image.jpg">
+<meta property="og:url" content="https://4.innova-tech.com.mx/">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/icon/favicon.png" type="image/png">
+
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
+
+
 
 <body>
 
+
+
+<!-- =========================
+        HEADER / MENÚ
+========================= -->
 <header class="menu">
 
-  <div class="logo-container">
-    <a href="index.html">
-      <img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm">
-    </a>
-    <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
-  </div>
+<div class="logo-container">
 
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">☰</label>
+<img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm">
 
-  <nav aria-label="Menú principal">
-  <ul class="menu-principal">
-  <li><a href="index.html">Inicio</a></li>
+<span class="titulo-upm">
+Universidad Politécnica Mesoamericana
+</span>
 
-  <li class="submenu">
-  <a href="#">Nuestra Universidad ▾</a>
-  <ul class="dropdown">
-    <li><a href="mensaje-del-rector.html">Mensaje del Rector</a></li>
-    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-    <li><a href="mision-vision-valores.html">Misión y Visión </a></li>
-    <li><a href="historia.html">Historia</a></li>
-    <li><a href="organigrama-institucional.html">Organigrama Institucional</a></li>
-    <li><a href="directorio.html">Directorio</a></li>
-  </ul>
+</div>
+
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="menu-icon">
+☰
+</label>
+
+
+<nav class="nav-menu" aria-label="Menú principal">
+
+<label for="menu-toggle" class="cerrar-menu">✕</label>
+
+<ul class="menu-principal">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li class="submenu">
+
+<a href="#" class="activo">Nuestra Universidad ▾</a>
+
+<ul class="dropdown">
+
+<li><a href="mensaje-del-rector.html">Mensaje del Rector</a></li>
+
+<li>
+<a href="quienes-somos.html" class="activo">
+Quiénes Somos
+</a>
 </li>
 
-  <li><a href="carreras.html">Oferta Educativa</a></li>
+<li><a href="mision-vision-valores.html">Misión y Visión</a></li>
 
-  <li><a href="admisiones.html">Admisiones</a></li>
+<li><a href="historia.html">Historia</a></li>
 
-  <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
+<li><a href="organigrama-institucional.html">Organigrama Institucional</a></li>
 
-  <li><a href="transparencia.html">Transparencia</a></li>
+<li><a href="directorio.html">Directorio</a></li>
 
-  <li><a href="contact.html">Contacto</a></li>
 </ul>
+
+</li>
+
+<li><a href="carreras.html">Oferta Educativa</a></li>
+
+<li><a href="admisiones.html">Admisiones</a></li>
+
+<li><a href="servicios-escolares.html">Servicios Escolares</a></li>
+
+
+<li class="submenu">
+
+<a href="#">Vinculación ▾</a>
+
+<ul class="dropdown">
+
+<li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+
+<li><a href="conocer.html">Conocer</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="contact.html">Contacto</a></li>
+
+</ul>
+
 </nav>
 
 </header>
 
+
+
+<!-- =========================
+        BANNER
+========================= -->
+<section class="banner">
+
+<div class="slider">
+
+<img src="assets/banner/banner1.jpeg" class="slide active">
+
+<img src="assets/banner/banner2.jpeg" class="slide">
+
+<img src="assets/banner/banner3.png" class="slide">
+
+</div>
+
+</section>
+
+<!-- =========================
+        CONTENIDO PRINCIPAL
+========================= -->
 <main class="contenedor-about">
 
+<!-- INTRODUCCIÓN -->
 <section class="seccion">
 
 <h1>Quiénes Somos</h1>
@@ -69,60 +168,97 @@ La oferta educativa de la universidad pretende favorecer el aprendizaje a travé
 En el modelo educativo de las universidades politécnicas se plantea la formación profesional basada en competencias, la cual presenta características diferentes a la formación tradicional, que se manifiestan en el diseño curricular, en la forma de conducir el proceso de enseñanza-aprendizaje mediante el uso de estrategias y técnicas didácticas diversas, y en la evaluación de los aprendizajes.
 </p>
 
-<hr>
+</section>
+
+<!-- OBJETIVO DE LAS UNIVERSIDADES POLITÉCNICAS -->
+<section class="seccion">
 
 <h2>¿Cuál es el Objetivo de las Universidades Politécnicas?</h2>
 
 <ul>
 <li>Impartir educación superior de licenciatura y de posgrado al nivel de especialización tecnológica.</li>
+
 <li>Preparar profesionales con una sólida formación científica, técnica y en valores, conscientes del contexto nacional en lo económico, político y social.</li>
+
 <li>Llevar a cabo investigación aplicada y desarrollo tecnológico pertinentes para el desarrollo económico y social de la región, del estado y de la nación.</li>
+
 <li>Difundir el conocimiento y la cultura a través de la extensión universitaria y la formación a lo largo de toda la vida.</li>
 </ul>
 
-<hr>
+</section>
+
+<!-- OFERTA PARA LOS ALUMNOS -->
+<section class="seccion">
 
 <h2>¿Qué ofrecemos a nuestros alumnos?</h2>
 
 <ul>
 <li>Planes y programas de estudio con diseño basado en competencias.</li>
+
 <li>Salidas laterales en tres ciclos de formación.</li>
+
 <li>Carreras pertinentes según las necesidades del sector productivo, con duración de tres años y medio.</li>
+
 <li>Profesores competentes con grado académico mínimo de maestría.</li>
+
 <li>Estancias y estadías en empresas.</li>
+
 <li>Inglés durante nueve cuatrimestres.</li>
+
 <li>Movilidad entre Universidades Politécnicas.</li>
+
 <li>Ambientes de aprendizaje e instalaciones adecuadas.</li>
+
 <li>Atención individualizada mediante tutorías y asesorías.</li>
+
 <li>Participación en proyectos de investigación.</li>
+
 <li>Desarrollo de competencias genéricas para resolver problemas, formular proyectos y comunicarse efectivamente en español e inglés.</li>
+
 <li>Titulación automática al concluir el plan de estudios.</li>
 </ul>
 
-<hr>
+</section>
+
+<!-- EXPECTATIVAS DEL ESTUDIANTE -->
+<section class="seccion">
 
 <h2>¿Qué esperamos de nuestros alumnos?</h2>
 
 <ul>
 <li>Responsabilidad en su propia formación y compromiso con el estudio.</li>
+
 <li>Comprensión del modelo educativo para integrarse de manera natural.</li>
+
 <li>Actitud participativa en distintos ambientes de aprendizaje.</li>
+
 <li>Uso adecuado de las técnicas de aprendizaje facilitadas por el docente.</li>
+
 <li>Valoración del aprendizaje significativo para su desempeño profesional.</li>
+
 <li>Refuerzo y enriquecimiento de sus valores dentro de la institución.</li>
+
 <li>Disposición para aprender a lo largo de toda la vida.</li>
 </ul>
 
-<hr>
+</section>
+
+<!-- PERFIL DE EGRESADOS -->
+<section class="seccion">
 
 <h2>¿Cómo son nuestros egresados?</h2>
 
 <ul>
 <li>Capaces de enfrentar con éxito las demandas del mundo laboral en distintos contextos.</li>
+
 <li>Con habilidades de autoevaluación crítica y desarrollo continuo.</li>
+
 <li>Responsables de su desarrollo personal y profesional.</li>
+
 <li>Con comportamiento profesional acorde a las necesidades del sector productivo.</li>
+
 <li>Capaces de trabajar colaborativamente en equipos multidisciplinarios.</li>
+
 <li>Competentes para aplicar conocimientos y habilidades en contextos diversos.</li>
 </ul>
 
@@ -130,9 +266,88 @@ En el modelo educativo de las universidades politécnicas se plantea la formaci�
 
 </main>
 
+<!-- =========================
+        FOOTER
+========================= -->
 <footer>
-  <p>© 2025 Universidad Politécnica Mesoamericana.</p>
+
+<section>
+
+<h3>Dirección</h3>
+
+<p>
+Carretera Tenosique – El Ceibo Km 43.5 S/N,
+Colonia Agrícola Sueños de Oro,
+Tenosique, Tabasco, México.
+C.P. 86906
+</p>
+
+</section>
+
+
+<section>
+
+<h3>Contacto</h3>
+
+<p>
+Teléfono Institucional: +52 934 342 46 71<br>
+Difusión: +52 934 262 48 44<br>
+Email: difusion@upm.edu.mx
+</p>
+
+</section>
+
+
+<section class="footer-redes">
+
+<h3>Redes Sociales</h3>
+
+<div class="redes-iconos">
+
+<a href="https://www.facebook.com/upmdifusion" target="_blank">
+<img src="assets/icon/facebook.png" alt="Facebook UPM">
+</a>
+
+<a href="https://www.instagram.com/politecnica__mesoamericana/" target="_blank">
+<img src="assets/icon/instagram.png" alt="Instagram UPM">
+</a>
+
+<a href="https://x.com/upmcomunicacion" target="_blank">
+<img src="assets/icon/x.png" alt="X UPM">
+</a>
+
+</div>
+
+</section>
+
+<p>
+© 2025 Universidad Politécnica Mesoamericana.
+Todos los derechos reservados.
+</p>
+
 </footer>
+
+
+
+<!-- =========================
+        BOTÓN WHATSAPP
+========================= -->
+<a
+href="https://wa.me/5219342624844?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
+class="whatsapp-float"
+target="_blank"
+aria-label="WhatsApp UPM">
+
+<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
+
+</a>
+
+
+
+<!-- =========================
+        JAVASCRIPT
+========================= -->
+<script src="faq.js"></script>
 
 </body>
 </html>

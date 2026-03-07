@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!-- =========================
+        HEAD / METADATOS
+========================= -->
 <head>
-  <meta charset="UTF-8">
-  <title>Misión, Visión y Valores | Universidad Politécnica Mesoamericana</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8" />
+
+<title> Misión y Visión | Universidad Politécnica Mesoamericana</title>
+
+<meta name="description" content="La Universidad Politécnica Mesoamericana forma profesionales comprometidos con el desarrollo regional a través de una educación práctica, innovadora y de calidad.">
+<meta name="keywords" content="Universidad Politécnica Mesoamericana, UPM, educación superior, ingenierías, licenciaturas, Tenosique, Tabasco">
+<meta name="author" content="Universidad Politécnica Mesoamericana">
+
+<!-- Open Graph / Redes sociales -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Universidad Politécnica Mesoamericana | Educar para producir">
+<meta property="og:description" content="Formamos profesionales capaces de transformar su entorno mediante una educación práctica, innovadora y con compromiso social.">
+<meta property="og:image" content="https://4.innova-tech.com.mx/assets/share-image.jpg">
+<meta property="og:url" content="https://4.innova-tech.com.mx/">
+<meta property="og:site_name" content="Universidad Politécnica Mesoamericana">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/icon/favicon.png" type="image/png">
+
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+
+<!-- =========================
+        HEADER / MENÚ
+========================= -->
 <header class="menu">
+
+  <!-- LOGO -->
   <div class="logo-container">
-    <a href="index.html">
-      <img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm">
-    </a>
+    <img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm">
     <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
   </div>
 
+  <!-- BOTÓN MENÚ MÓVIL -->
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">☰</label>
 
-  <nav aria-label="Menú principal">
+  <label for="menu-toggle" class="menu-icon">
+    ☰
+  </label>
+
+
+  <!-- =========================
+        NAVEGACIÓN PRINCIPAL
+  ========================= -->
+  <nav class="nav-menu" aria-label="Menú principal">
+
+  <!-- BOTÓN CERRAR MENÚ MÓVIL -->
+  <label for="menu-toggle" class="cerrar-menu">✕</label>
+
   <ul class="menu-principal">
-  <li><a href="index.html">Inicio</a></li>
+
+  <li><a href="index.html" >Inicio</a></li>
 
   <li class="submenu">
-  <a href="#">Nuestra Universidad ▾</a>
+  <a href="#" class="activo">Nuestra Universidad ▾</a>
   <ul class="dropdown">
-    <li><a href="mensaje-del-rector.html">Mensaje del Rector</a></li>
+    <li><a href="mensaje-del-rector.html" >Mensaje del Rector</a></li>
     <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-    <li><a href="mision-vision-valores.html">Misión y Visión </a></li>
+    <li><a href="mision-vision-valores.html" class="activo">Misión y Visión</a></li>
     <li><a href="historia.html">Historia</a></li>
     <li><a href="organigrama-institucional.html">Organigrama Institucional</a></li>
     <li><a href="directorio.html">Directorio</a></li>
   </ul>
-</li>
+  </li>
 
   <li><a href="carreras.html">Oferta Educativa</a></li>
 
@@ -42,13 +88,38 @@
 
   <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
 
-  <li><a href="transparencia.html">Transparencia</a></li>
+  <li class="submenu">
+  <a href="#">Vinculación ▾</a>
+  <ul class="dropdown">
+    <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+    <li><a href="conocer.html">Conocer</a></li>
+  </ul>
+  </li>
 
   <li><a href="contact.html">Contacto</a></li>
-</ul>
-</nav>
+
+  </ul>
+  </nav>
 
 </header>
+
+
+
+<!-- =========================
+        BANNER / SLIDER
+========================= -->
+<section class="banner">
+
+<div class="slider">
+
+<img src="assets/banner/banner1.jpeg" class="slide active">
+<img src="assets/banner/banner2.jpeg" class="slide">
+<img src="assets/banner/banner3.png" class="slide">
+
+</div>
+
+</section>
+
 
 <main class="contenedor-about">
 
@@ -56,69 +127,143 @@
 
 <h1>Misión, Visión y Valores</h1>
 
-<div class="bloques-mv">
+<!-- MISIÓN -->
+<h2>Misión</h2>
 
-  <div class="card-mv">
-    <h2>Misión</h2>
-    <p>
-      La Universidad Politécnica Mesoamericana es la institución formadora de profesionales a través de la enseñanza de calidad basada en competencias, comprometidos con la investigación científico-tecnológica y vocación de liderazgo que favorezca el desarrollo sustentable de la región mesoamericana.
-    </p>
-  </div>
-
-  <div class="card-mv">
-    <h2>Visión</h2>
-    <p>
-      Ser la Universidad Politécnica líder de Mesoamérica, reconocida por su excelencia educativa, su vinculación con los diversos sectores e impulso a la investigación científica-tecnológica en el desarrollo regional sustentable.
-    </p>
-  </div>
-
-</div>
-
-<hr class="separador">
-
-<h2 class="titulo-valores">Valores Institucionales</h2>
-
-<p class="intro-valores">
-Es elemental hoy en día identificarnos y distinguirnos como una institución educativa que tiene la tarea de forjar el destino de una comunidad estudiantil. 
-Alumnos, docentes, personal administrativo y todos los integrantes de la UPM debemos adoptar, guiarnos y reflejar en nuestras acciones cotidianas los siguientes valores:
+<p>
+La Universidad Politécnica Mesoamericana es la institución formadora de profesionales a través de la enseñanza de calidad basada en competencias, comprometidos con la investigación científico-tecnológica y vocación de liderazgo que favorezca el desarrollo sustentable de la región mesoamericana.
 </p>
 
-<div class="grid-valores">
 
-  <div class="valor">
-    <h3>Calidad Educativa</h3>
-    <p>Construir nuevos conocimientos con base en la estructura cognitiva de los estudiantes que propicien el aprendizaje significativo.</p>
-  </div>
+<!-- VISIÓN -->
+<h2>Visión</h2>
 
-  <div class="valor">
-    <h3>Honestidad</h3>
-    <p>Compromiso como miembro de la UPM para lograr credibilidad y confianza dentro de la esfera social.</p>
-  </div>
+<p>
+Ser la Universidad Politécnica líder de Mesoamérica, reconocida por su excelencia educativa, su vinculación con los diversos sectores e impulso a la investigación científica-tecnológica en el desarrollo regional sustentable.
+</p>
 
-  <div class="valor">
-    <h3>Responsabilidad Moral y Social</h3>
-    <p>Nos ayuda a establecer las metas que queremos alcanzar y decidir cómo lograrlas.</p>
-  </div>
 
-  <div class="valor">
-    <h3>Conciencia Ambiental</h3>
-    <p>Conocimientos, actitudes y acciones para la conservación de los recursos naturales y su entorno.</p>
-  </div>
+<!-- Valores Institucionales -->
+<h2>Valores Institucionales</h2>
 
-  <div class="valor">
-    <h3>Liderazgo</h3>
-    <p>Fomenta el espíritu de superación para desarrollar programas y servicios con resultados positivos y propuestas de vanguardia.</p>
-  </div>
+<p>
+Es elemental hoy en día identificarnos y distinguirnos como una institución educativa que tiene la tarea de forjar el destino de una comunidad estudiantil. 
+Para fortalecer la relación entre la sociedad, la iniciativa privada y el gobierno, alumnos, docentes, personal administrativo y todos los integrantes de la UPM 
+debemos adoptar, guiarnos y reflejar en nuestras acciones cotidianas los siguientes valores institucionales:
+</p>
+
+<ul>
+
+<li>
+<strong>Calidad Educativa:</strong> Construir nuevos conocimientos con base en la estructura cognitiva de los estudiantes que propicien el aprendizaje significativo.
+</li>
+
+<li>
+<strong>Honestidad:</strong> Compromiso como miembro de la UPM para lograr credibilidad y confianza dentro de la esfera social.
+</li>
+
+<li>
+<strong>Responsabilidad Moral y Social:</strong> Nos ayuda a establecer las metas que queremos alcanzar y a decidir cómo lograrlas.
+</li>
+
+<li>
+<strong>Conciencia Ambiental:</strong> Conocimientos, actitudes y acciones orientadas a la conservación de los recursos naturales y el cuidado del medio ambiente.
+</li>
+
+<li>
+<strong>Liderazgo:</strong> Fomenta el espíritu de superación necesario para desarrollar programas y servicios con resultados positivos, reconocidos por sus aportaciones de vanguardia y su capacidad para proponer soluciones con sentido de anticipación y pertinencia.
+</li>
+
+</ul>
+
+</main>
+
+<!-- =========================
+        FOOTER
+========================= -->
+<footer>
+
+<section>
+
+<h3>Dirección</h3>
+
+<p>
+Carretera Tenosique – El Ceibo Km 43.5 S/N,
+Colonia Agrícola Sueños de Oro,
+Tenosique, Tabasco, México.
+C.P. 86906
+</p>
+
+</section>
+
+
+
+<section>
+
+<h3>Contacto</h3>
+
+<p>
+Teléfono Institucional: +52 934 342 46 71<br>
+Difusión: +52 934 262 48 44<br>
+Email: difusion@upm.edu.mx
+</p>
+
+</section>
+
+
+
+<section class="footer-redes">
+
+<h3>Redes Sociales</h3>
+
+<div class="redes-iconos">
+
+<a href="https://www.facebook.com/upmdifusion" target="_blank">
+<img src="assets/icon/facebook.png" alt="Facebook UPM">
+</a>
+
+<a href="https://www.instagram.com/politecnica__mesoamericana/" target="_blank">
+<img src="assets/icon/instagram.png" alt="Instagram UPM">
+</a>
+
+<a href="https://x.com/upmcomunicacion" target="_blank">
+<img src="assets/icon/x.png" alt="X UPM">
+</a>
 
 </div>
 
 </section>
 
-</main>
 
-<footer>
-  <p>© 2025 Universidad Politécnica Mesoamericana.</p>
+
+<p>
+© 2025 Universidad Politécnica Mesoamericana.
+Todos los derechos reservados.
+</p>
+
 </footer>
+
+
+
+<!-- =========================
+        BOTÓN WHATSAPP
+========================= -->
+<a
+href="https://wa.me/5219342624844?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
+class="whatsapp-float"
+target="_blank"
+aria-label="WhatsApp UPM">
+
+<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
+
+</a>
+
+
+
+<!-- =========================
+        JAVASCRIPT
+========================= -->
+<script src="faq.js"></script>
 
 </body>
 </html>

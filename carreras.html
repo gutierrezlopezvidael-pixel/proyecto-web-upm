@@ -16,10 +16,13 @@
     <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
   </div>
 
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">☰</label>
+   <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+    ☰
+  </label>
 
-  <nav aria-label="Menú principal">
+  <nav class="nav-menu" aria-label="Menú principal">
+    <label for="menu-toggle" class="cerrar-menu">✕</label>
     <ul class="menu-principal">
       <li><a href="index.html">Inicio</a></li>
 
@@ -35,15 +38,33 @@
         </ul>
       </li>
 
-      <li><a href="carreras.html">Oferta Educativa</a></li>
+      <li><a href="carreras.html"class="activo">Oferta Educativa</a></li>
       <li><a href="admisiones.html">Admisiones</a></li>
       <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
-      <li><a href="transparencia.html">Transparencia</a></li>
+      
+      <li class="submenu">
+  <a href="#">Vinculación ▾</a>
+  <ul class="dropdown">
+    <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+    <li><a href="conocer.html">Conocer</a></li>
+  </ul>
+</li>
       <li><a href="contact.html">Contacto</a></li>
     </ul>
   </nav>
 
 </header>
+
+<!-- BANNER -->
+<section class="banner">
+    <div class="slider">
+
+        <img src="assets/banner/banner1.jpeg" class="slide active">
+        <img src="assets/banner/banner2.jpeg" class="slide">
+        <img src="assets/banner/banner3.png" class="slide">
+
+    </div>
+</section>
 
 <main class="contenedor-about">
 
@@ -93,5 +114,6 @@ orientados a la innovación, el desarrollo regional y la excelencia profesional.
   <p>© 2025 Universidad Politécnica Mesoamericana.</p>
 </footer>
 
+<script src="faq.js"></script>
 </body>
 </html>

@@ -22,8 +22,36 @@
 body {
   background: var(--gris-claro);
   color: var(--gris-oscuro);
-  line-height: 1.6;
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin:0;
+}
+
+
+p{
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+h1{
+font-size:2.8rem;
+color: var(--morado-upm);
+text-align: center;
+margin-bottom: 25px;
+}
+
+h2{
+font-size:2rem;
+}
+
+h3{
+font-size:1.4rem;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 img {
@@ -42,6 +70,13 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  backdrop-filter: blur(6px);
 }
 
 /* Logo */
@@ -85,13 +120,41 @@ nav {
   color: var(--blanco);
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   white-space: nowrap;
   transition: 0.3s;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.menu-principal a.activo {
+  color: var(--naranja-upm);
+}
+
+.menu-principal a.activo::after {
+  width: 100%;
+}
+
+
+.menu-principal a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--naranja-upm);
+  transition: width 0.3s ease;
+}
+
+.menu-principal a:hover::after {
+  width: 100%;
 }
 
 .menu-principal a:hover {
   color: var(--naranja-upm);
+  transform: translateY(-3px);
+  text-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* ================================
@@ -102,13 +165,20 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--morado-upm);
+  background: #3b3791;
   min-width: 200px;
-  display: none;
+  display: flex;          /* AGREGA ESTO */
   flex-direction: column;
   padding: 10px 0;
   border-radius: 6px;
   z-index: 1000;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  opacity: 0;
+  transform: translateY(15px) scale(0.95);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
 }
 
 .dropdown li a {
@@ -122,6 +192,9 @@ nav {
 
 .submenu:hover .dropdown {
   display: flex;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
 }
 
 /* ================================
@@ -133,9 +206,14 @@ nav {
 
 .menu-icon {
   display: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--blanco);
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-icon:hover{
+  transform: scale(1.1);
 }
 
 /* ================================
@@ -155,7 +233,8 @@ nav {
 
 .hero-info h1 {
   color: var(--morado-upm);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -227,7 +306,7 @@ section h2 {
   margin-bottom: 20px;
   border-left: 6px solid var(--naranja-upm);
   padding-left: 12px;
-  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.8rem;
 }
 
 section p {
@@ -262,7 +341,7 @@ section p {
 .noticia h3 {
   padding: 10px;
   color: var(--morado-upm);
-  font-family: "Georgia", serif;
+  font-weight: 600;
 }
 
 .noticia p {
@@ -272,11 +351,13 @@ section p {
 /* ================================
    FOOTER
 ================================ */
-footer {
+footer{
   background: var(--verde-upm);
-  color: var(--blanco);
-  padding: 25px 20px;
+  color: white;
   text-align: center;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
 }
 
 footer section {
@@ -285,7 +366,7 @@ footer section {
 }
 
 footer h3 {
-  font-family: "Georgia", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 6px;
 }
@@ -351,46 +432,87 @@ footer a {
 }
 
 /* ================================
-   RESPONSIVE
+MENU MOVIL PROFESIONAL
 ================================ */
-@media (max-width: 768px) {
 
-  .menu-icon {
-    display: block;
-  }
+@media (max-width:768px){
 
-  nav {
-    width: 100%;
-    display: none;
-    background: var(--morado-upm);
-    margin-top: 15px;
-  }
-
-  .menu-principal {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .menu-principal li {
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.2);
-  }
-
-  .menu-principal a {
-    display: block;
-    padding: 15px;
-  }
-
-  .dropdown {
-    position: static;
-    display: none;
-    padding-left: 15px;
-  }
-
-  #menu-toggle:checked + .menu-icon + nav {
-    display: block;
-  }
+.menu-icon{
+display:block;
+font-size:30px;
+cursor:pointer;
+color:white;
 }
+
+/* PANEL */
+
+.nav-menu{
+position:fixed;
+top:0;
+right:-100%;
+width:80%;
+height:100vh;
+background:#3b3685;
+transition:0.35s ease;
+padding-top:90px;
+z-index:1000;
+box-shadow:-10px 0 25px rgba(0,0,0,0.3);
+}
+
+/* ABRIR MENU */
+
+#menu-toggle:checked + .menu-icon + .nav-menu{
+right:0;
+}
+
+/* BOTON CERRAR */
+
+.cerrar-menu{
+position:absolute;
+top:25px;
+right:25px;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+/* LISTA */
+
+.menu-principal{
+flex-direction:column;
+gap:0;
+}
+
+.menu-principal li{
+border-bottom:1px solid rgba(255,255,255,0.15);
+}
+
+.menu-principal a{
+display:block;
+padding:18px 25px;
+font-size:17px;
+text-align:left;
+}
+
+/* SUBMENU */
+
+.dropdown{
+position:static;
+display:none;
+background:#312c6d;
+}
+
+.submenu.active .dropdown{
+display:block;
+}
+
+.dropdown li a{
+padding-left:40px;
+font-size:15px;
+}
+}
+
+
 
 /* ==============================
    HISTORIA - LINEA DEL TIEMPO
@@ -831,18 +953,24 @@ body { margin: 0; font-family: 'Arial', sans-serif; }
     padding: 20px;
 }
 
-/* El contenedor del video */
-.video-wrapper {
-    flex: 2; /* El video es más ancho */
-    max-width: 400px;
+.video-wrapper{
+width:100%;
+margin:40px auto;
 }
 
-.video-wrapper iframe {
-    width: 100%;
-    height: 337px; /* Proporción 16:9 */
-    border-radius: 15px;
-    border: none;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.video-wrapper iframe{
+width:100%;
+aspect-ratio:16/9;
+height:auto;
+border:none;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.micrositio-centro{
+display:flex;
+justify-content:center;
+margin-top:25px;
 }
 
 /* El contenedor del logo a la derecha */
@@ -904,4 +1032,66 @@ body { margin: 0; font-family: 'Arial', sans-serif; }
         width: 100%;
         max-width: 100%;
     }
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner{
+    width:100%;
+    text-align:center;
+}
+
+.slider{
+    width:100%;
+}
+
+.slide{
+    width:100%;
+    height:auto;
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+@media (max-width:768px){
+
+body{
+font-size:17px;
+}
+
+h1{
+font-size:2.2rem;
+}
+
+h2{
+font-size:1.7rem;
+}
+
+}
+
+/* ===============================
+   MENSAJE DEL RECTOR
+================================ */
+
+/* Imagen del rector */
+.rector-imagen img{
+  max-width: 380px;     /* hace la imagen más pequeña */
+  margin: 0 auto;       /* centra la imagen */
+  border-radius: 20px;  /* bordes redondeados */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* sombra elegante */
+}
+
+/* Texto del rector */
+.rector-texto{
+  margin-top: 30px;
+}
+
+/* Firma centrada */
+.firma-rector{
+  text-align: center;
+  margin-top: 35px;
 }

@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+  <!-- =========================
+        META DATOS
+  ========================= -->
   <meta charset="UTF-8">
+
   <title>Oferta Educativa | Universidad Politécnica Mesoamericana</title>
-  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Conoce la oferta educativa de la Universidad Politécnica Mesoamericana. Programas de TSU, Licenciatura e Ingeniería orientados al desarrollo profesional.">
+  <meta name="keywords" content="UPM, Universidad Politécnica Mesoamericana, carreras universitarias, TSU, licenciaturas, ingenierías">
+  <meta name="author" content="Universidad Politécnica Mesoamericana">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =========================
+        ESTILOS Y FUENTES
+  ========================= -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="assets/icon/favicon.png" type="image/png">
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+        MENÚ PRINCIPAL
+========================= -->
 <header class="menu">
 
   <div class="logo-container">
@@ -16,14 +41,19 @@
     <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
   </div>
 
-   <input type="checkbox" id="menu-toggle">
+  <!-- Botón menú móvil -->
+  <input type="checkbox" id="menu-toggle">
+
   <label for="menu-toggle" class="menu-icon">
     ☰
   </label>
 
   <nav class="nav-menu" aria-label="Menú principal">
+
     <label for="menu-toggle" class="cerrar-menu">✕</label>
+
     <ul class="menu-principal">
+
       <li><a href="index.html">Inicio</a></li>
 
       <li class="submenu">
@@ -38,71 +68,128 @@
         </ul>
       </li>
 
-      <li><a href="carreras.html"class="activo">Oferta Educativa</a></li>
+      <li><a href="carreras.html" class="activo">Oferta Educativa</a></li>
+
       <li><a href="admisiones.html">Admisiones</a></li>
+
       <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
-      
+
       <li class="submenu">
-  <a href="#">Vinculación ▾</a>
-  <ul class="dropdown">
-    <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
-    <li><a href="conocer.html">Conocer</a></li>
-  </ul>
-</li>
+        <a href="#">Vinculación ▾</a>
+        <ul class="dropdown">
+          <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+          <li><a href="conocer.html">Conocer</a></li>
+        </ul>
+      </li>
+
       <li><a href="contact.html">Contacto</a></li>
+
     </ul>
+
   </nav>
 
 </header>
 
-<!-- BANNER -->
+
+
+<!-- =========================
+        BANNER / SLIDER
+========================= -->
 <section class="banner">
-    <div class="slider">
 
-        <img src="assets/banner/banner1.jpeg" class="slide active">
-        <img src="assets/banner/banner2.jpeg" class="slide">
-        <img src="assets/banner/banner3.png" class="slide">
+  <div class="slider">
 
-    </div>
+    <img src="assets/banner/banner1.jpeg" class="slide active">
+    <img src="assets/banner/banner2.jpeg" class="slide">
+    <img src="assets/banner/banner3.png" class="slide">
+
+  </div>
+
 </section>
 
+
+
+<!-- =========================
+        CONTENIDO PRINCIPAL
+========================= -->
 <main class="contenedor-about">
 
+
+<!-- =========================
+        OFERTA EDUCATIVA
+========================= -->
 <section class="oferta">
 
 <h1>Oferta Educativa</h1>
 
 <p class="intro-oferta">
-Conoce nuestros programas académicos diseñados bajo el modelo basado en competencias,
+Conoce nuestros programas académicos diseñados bajo el modelo educativo basado en competencias,
 orientados a la innovación, el desarrollo regional y la excelencia profesional.
 </p>
 
+
+
+<!-- =========================
+        IMAGEN PROMOCIONAL
+========================= -->
+<div class="promo-oferta">
+
+<img src="assets/img/oferta-upm.jpg" alt="Oferta educativa Universidad Politécnica Mesoamericana">
+
+<p class="texto-promo">
+
+En la Universidad Politécnica Mesoamericana podrás obtener primero el grado de 
+<strong>Técnico Superior Universitario (TSU)</strong> y posteriormente continuar 
+tus estudios para obtener el título de <strong>Licenciatura o Ingeniería</strong>.
+
+Nuestro modelo educativo permite a los estudiantes graduarse en aproximadamente 
+<strong>3 años y medio con dos títulos profesionales</strong>, fortaleciendo su 
+formación académica y sus oportunidades en el ámbito laboral.
+
+</p>
+
+</div>
+
+
+
+<!-- =========================
+        TARJETAS DE CARRERAS
+========================= -->
 <div class="grid-carreras">
 
-  <a href="itiiid.html" class="card-carrera">
-    <img src="assets/img/carreras/iti.jpeg" alt="Ingeniería en Tecnologías de la Información e Innovación Digital">
-    <h3>Ingeniería en Tecnologías de la Información e Innovación Digital</h3>
-  </a>
+<a href="itiiid.html" class="card-carrera">
+<img src="assets/img/carreras/iti.jpg">
+<h3>Ingeniería en Tecnologías de la Información e Innovación Digital</h3>
+<p class="tsu">TSU en Desarrollo de Software Multiplataforma</p>
+</a>
 
-  <a href="manejo-recursos.html" class="card-carrera">
-    <img src="assets/img/carreras/imrn.jpeg" alt="Ingeniería en Manejo de Recursos Naturales">
-    <h3>Ingeniería en Manejo de Recursos Naturales</h3>
-  </a>
 
-  <a href="petrolera.html" class="card-carrera">
-    <img src="assets/img/carreras/ip.jpg" alt="Ingeniería Petrolera">
-    <h3>Ingeniería Petrolera</h3>
-  </a>
+<a href="manejo-recursos.html" class="card-carrera">
+<img src="assets/img/carreras/imrn.jpg">
+<h3>Ingeniería en Manejo de Recursos Naturales</h3>
+<p class="tsu">TSU en Protección y Conservación Ambiental</p>
+</a>
 
-  <a href="turismo.html" class="card-carrera">
-    <img src="assets/img/carreras/laet.jpeg" alt="Licenciatura en Administración de Empresas Turísticas">
-    <h3>Licenciatura en Administración de Empresas Turísticas</h3>
-  </a>
 
-  <a href="comercio.html" class="card-carrera">
-    <img src="assets/img/carreras/lcia.jpeg" alt="Licenciatura en Comercio Internacional y Aduanas">
-    <h3>Licenciatura en Comercio Internacional y Aduanas</h3>
-  </a>
+<a href="petrolera.html" class="card-carrera">
+<img src="assets/img/carreras/ip.png">
+<h3>Ingeniería Petrolera</h3>
+<p class="tsu">TSU en Perforación y Servicios a Pozos</p>
+</a>
+
+
+<a href="turismo.html" class="card-carrera">
+<img src="assets/img/carreras/laet.png">
+<h3>Licenciatura en Gestión y Desarrollo Turístico</h3>
+<p class="tsu">TSU en Turismo</p>
+</a>
+
+
+<a href="comercio.html" class="card-carrera">
+<img src="assets/img/carreras/lcia.jpg">
+<h3>Licenciatura en Comercio Internacional y Aduanas</h3>
+<p class="tsu">TSU en Clasificación Arancelaria y Despacho Aduanero</p>
+</a>
 
 </div>
 
@@ -110,10 +197,80 @@ orientados a la innovación, el desarrollo regional y la excelencia profesional.
 
 </main>
 
+
+
+<!-- =========================
+        FOOTER
+========================= -->
 <footer>
-  <p>© 2025 Universidad Politécnica Mesoamericana.</p>
+
+<section>
+<h3>Dirección</h3>
+<p>
+Carretera Tenosique – El Ceibo Km 43.5 S/N,
+Colonia Agrícola Sueños de Oro, Tenosique, Tabasco, México.
+C.P. 86906
+</p>
+</section>
+
+
+<section>
+<h3>Contacto</h3>
+<p>
+Teléfono Institucional: +52 934 342 46 71<br>
+Difusión: +52 934 262 48 44<br>
+Email: difusion@upm.edu.mx
+</p>
+</section>
+
+
+<section class="footer-redes">
+
+<h3>Redes Sociales</h3>
+
+<div class="redes-iconos">
+
+<a href="https://www.facebook.com/upmdifusion" target="_blank">
+<img src="assets/icon/facebook.png" alt="Facebook UPM">
+</a>
+
+<a href="https://www.instagram.com/politecnica__mesoamericana/" target="_blank">
+<img src="assets/icon/instagram.png" alt="Instagram UPM">
+</a>
+
+<a href="https://x.com/upmcomunicacion" target="_blank">
+<img src="assets/icon/x.png" alt="X UPM">
+</a>
+
+</div>
+
+</section>
+
+<p>© 2025 Universidad Politécnica Mesoamericana. Todos los derechos reservados.</p>
+
 </footer>
 
+
+
+<!-- =========================
+        BOTÓN WHATSAPP
+========================= -->
+<a
+href="https://wa.me/5219342624844?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
+class="whatsapp-float"
+target="_blank"
+aria-label="WhatsApp UPM">
+
+<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
+
+</a>
+
+
+
+<!-- =========================
+        SCRIPTS
+========================= -->
 <script src="faq.js"></script>
+
 </body>
 </html>

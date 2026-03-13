@@ -28,3 +28,46 @@ function cambiarSlide() {
 }
 
 setInterval(cambiarSlide, 5000);
+
+// ============================
+// CARRUSEL GALERIA CARRERAS
+// ============================
+
+const contenedor = document.querySelector(".contenedor-imagenes");
+const btnIzq = document.querySelector(".flecha.izquierda");
+const btnDer = document.querySelector(".flecha.derecha");
+
+if(contenedor){
+
+btnDer.addEventListener("click", () => {
+contenedor.scrollLeft += 320;
+});
+
+btnIzq.addEventListener("click", () => {
+contenedor.scrollLeft -= 320;
+});
+
+}
+
+
+// ============================
+// VISOR DE IMÁGENES GALERÍA
+// ============================
+
+const imagenesGaleria = document.querySelectorAll(".contenedor-imagenes img");
+const visor = document.getElementById("visorImagen");
+const imagenAmpliada = document.getElementById("imagenAmpliada");
+const cerrarVisor = document.querySelector(".cerrar-visor");
+
+imagenesGaleria.forEach(img => {
+img.addEventListener("click", () => {
+
+visor.style.display = "flex";
+imagenAmpliada.src = img.src;
+
+});
+});
+
+cerrarVisor.addEventListener("click", () => {
+visor.style.display = "none";
+});

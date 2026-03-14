@@ -7,6 +7,28 @@ preguntas.forEach(pregunta => {
   });
 });
 
+
+/* =================================
+   SUMNENU EN CELULAR 
+================================= */
+
+document.querySelectorAll(".submenu > a").forEach(menu => {
+
+menu.addEventListener("click", function(e){
+
+if(window.innerWidth <= 768){
+
+e.preventDefault();
+
+this.parentElement.classList.toggle("active");
+
+}
+
+});
+
+});
+
+
 /* =================================
    SLIDER AUTOMÁTICO DEL BANNER
 ================================= */

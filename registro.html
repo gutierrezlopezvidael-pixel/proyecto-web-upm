@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- =========================
+        META DATOS
+========================= -->
+<meta charset="UTF-8">
+
+<title>Pre-Registro de Aspirantes | Universidad Politécnica Mesoamericana</title>
+
+<meta name="description" content="Formulario de pre-registro para aspirantes de la Universidad Politécnica Mesoamericana.">
+
+<meta name="keywords" content="UPM, preregistro universidad, admisiones UPM, universidad Tenosique">
+
+<meta name="author" content="Universidad Politécnica Mesoamericana">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/icon/favicon.png" type="image/png">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+        MENÚ PRINCIPAL
+========================= -->
+<header class="menu">
+
+<div class="logo-container">
+
+<a href="index.html">
+<img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm">
+</a>
+
+<span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
+
+</div>
+
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="menu-icon">
+☰
+</label>
+
+
+<nav class="nav-menu" aria-label="Menú principal">
+
+<label for="menu-toggle" class="cerrar-menu">✕</label>
+
+<ul class="menu-principal">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li class="submenu">
+<a href="#">Nuestra Universidad ▾</a>
+<ul class="dropdown">
+<li><a href="mensaje-del-rector.html">Mensaje del Rector</a></li>
+<li><a href="quienes-somos.html">Quiénes Somos</a></li>
+<li><a href="mision-vision-valores.html">Misión y Visión</a></li>
+<li><a href="historia.html">Historia</a></li>
+<li><a href="organigrama-institucional.html">Organigrama Institucional</a></li>
+<li><a href="directorio.html">Directorio</a></li>
+</ul>
+</li>
+
+<li><a href="carreras.html">Oferta Educativa</a></li>
+
+<li><a href="admisiones.html" class="activo">Admisiones</a></li>
+
+<li><a href="servicios-escolares.html">Servicios Escolares</a></li>
+
+<li class="submenu">
+<a href="#">Vinculación ▾</a>
+<ul class="dropdown">
+<li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
+<li><a href="conocer.html">Conocer</a></li>
+</ul>
+</li>
+
+<li><a href="contact.html">Contacto</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+        CONTENIDO PRINCIPAL
+========================= -->
+<main>
+
+<section class="formulario-admision">
+
+<h1>Pre-Registro de Aspirantes</h1>
+
+<p class="texto-promo">
+Completa el siguiente formulario para iniciar tu proceso de admisión en la
+<strong>Universidad Politécnica Mesoamericana</strong>.
+Nuestro equipo se pondrá en contacto contigo para brindarte información
+sobre el proceso de inscripción.
+</p>
+
+
+<!-- =========================
+        FORMULARIO
+========================= -->
+
+<form action="https://formspree.io/f/mojaqlzv" method="POST" class="form-registro">
+
+
+<label for="nombre">Nombre completo *</label>
+<input 
+type="text" 
+id="nombre" 
+name="nombre" 
+placeholder="Escribe tu nombre completo"
+required
+minlength="5"
+>
+
+
+<label for="email">Correo electrónico *</label>
+<input 
+type="email" 
+id="email" 
+name="email" 
+placeholder="ejemplo@email.com"
+required
+>
+
+
+<label for="telefono">Teléfono *</label>
+<input 
+type="tel" 
+id="telefono" 
+name="telefono"
+placeholder="10 dígitos"
+pattern="[0-9]{10}"
+required
+>
+
+<label for="carrera">Carrera de interés *</label>
+
+<select id="carrera" name="carrera" required>
+
+<option value="" disabled selected>Seleccione una opción</option>
+
+<option value="itid">
+Ingeniería en Tecnologías de la Información e Innovación Digital
+</option>
+
+<option value="imrn">
+Ingeniería en Manejo de Recursos Naturales
+</option>
+
+<option value="ip">
+Ingeniería Petrolera
+</option>
+
+<option value="lgdt">
+Licenciatura en Gestión y Desarrollo Turístico
+</option>
+
+<option value="lcia">
+Licenciatura en Comercio Internacional y Aduanas
+</option>
+
+</select>
+
+
+<label for="mensaje">Mensaje o duda (opcional)</label>
+<textarea 
+id="mensaje"
+name="mensaje"
+rows="4"
+placeholder="Escribe aquí alguna duda o comentario...">
+</textarea>
+
+
+<!-- consentimiento -->
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+Acepto que mis datos sean utilizados para fines informativos relacionados
+con el proceso de admisión de la Universidad Politécnica Mesoamericana.
+
+</label>
+
+
+<br>
+
+<button type="submit" class="btn">
+Enviar Pre-Registro
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================
+        FOOTER
+========================= -->
+<footer>
+
+<section>
+<h3>Dirección</h3>
+<p>
+Carretera Tenosique – El Ceibo Km 43.5 S/N,
+Colonia Agrícola Sueños de Oro,
+Tenosique, Tabasco, México.
+C.P. 86906
+</p>
+</section>
+
+<section>
+<h3>Contacto</h3>
+<p>
+Teléfono Institucional: +52 934 342 46 71<br>
+Difusión: +52 934 262 48 44<br>
+Email: difusion@upm.edu.mx
+</p>
+</section>
+
+<section class="footer-redes">
+
+<h3>Redes Sociales</h3>
+
+<div class="redes-iconos">
+
+<a href="https://www.facebook.com/upmdifusion" target="_blank">
+<img src="assets/icon/facebook.png" alt="Facebook UPM">
+</a>
+
+<a href="https://www.instagram.com/politecnica__mesoamericana/" target="_blank">
+<img src="assets/icon/instagram.png" alt="Instagram UPM">
+</a>
+
+<a href="https://x.com/upmcomunicacion" target="_blank">
+<img src="assets/icon/x.png" alt="X UPM">
+</a>
+
+</div>
+
+</section>
+
+<p>© 2025 Universidad Politécnica Mesoamericana. Todos los derechos reservados.</p>
+
+</footer>
+
+
+
+<!-- =========================
+        BOTÓN WHATSAPP
+========================= -->
+
+<a
+href="https://wa.me/5219342624844?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
+class="whatsapp-float"
+target="_blank"
+aria-label="WhatsApp UPM"
+>
+
+<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
+
+</a>
+
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/00851bc19bd99ef4.css","style"]
+:HL["/logo-upm.png","image"]
+0:{"buildId":"70wxQsw8_8HVooQLD9XAM","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"contact","paramType":null,"paramKey":"contact","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

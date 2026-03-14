@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/gisse/OneDrive/Desktop/Pruebas%20UPM/next-test/app/page.js"],"sourcesContent":["export default function Home() {\n  return (\n    <main style={{ padding: \"40px\", fontFamily: \"Arial\" }}>\n      <h1>Proyecto UPM 2.0</h1>\n      <p>Arquitectura Híbrida Sin Cabeza</p>\n\n      <h2>Secciones del sitio</h2>\n      <ul>\n        <li>Inicio</li>\n        <li>Acerca de</li>\n        <li>Servicios</li>\n        <li>Contacto</li>\n      </ul>\n\n      <p>Este sitio se genera con Next.js en modo estático.</p>\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAK,OAAO;YAAE,SAAS;YAAQ,YAAY;QAAQ;;0BAClD,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;0BAEH,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;;kCACC,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;kCAAG;;;;;;;;;;;;0BAGN,8OAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
+}

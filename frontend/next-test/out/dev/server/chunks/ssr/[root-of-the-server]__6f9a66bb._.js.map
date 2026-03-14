@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/gisse/OneDrive/Desktop/Pruebas%20UPM/next-test/app/services/page.js"],"sourcesContent":["export default function Services() {\r\n  return (\r\n    <main style={{ padding: \"40px\", fontFamily: \"Arial\" }}>\r\n      <h1>Servicios</h1>\r\n\r\n      <p>\r\n        En el Proyecto UPM 2.0 ofrecemos soluciones basadas en tecnologías web\r\n        modernas, enfocadas en rendimiento, seguridad y escalabilidad.\r\n      </p>\r\n\r\n      <h2>Nuestros Servicios</h2>\r\n      <ul>\r\n        <li>Desarrollo de Sitios Web Estáticos</li>\r\n        <li>Implementación de WordPress Headless</li>\r\n        <li>Diseño de Interfaces (UI)</li>\r\n        <li>Optimización de Rendimiento Web</li>\r\n      </ul>\r\n\r\n      <p>\r\n        Nuestro objetivo es aplicar buenas prácticas de desarrollo web en un\r\n        entorno académico profesional.\r\n      </p>\r\n    </main>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAK,OAAO;YAAE,SAAS;YAAQ,YAAY;QAAQ;;0BAClD,8OAAC;0BAAG;;;;;;0BAEJ,8OAAC;0BAAE;;;;;;0BAKH,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;;kCACC,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;kCAAG;;;;;;;;;;;;0BAGN,8OAAC;0BAAE;;;;;;;;;;;;AAMT"}}]
+}

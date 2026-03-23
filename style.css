@@ -26,6 +26,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   margin:0;
+  padding-top: 95px;
 }
 
 p {
@@ -59,14 +60,19 @@ img {
 ================================ */
 .menu {
   background: var(--morado-upm);
-  padding: 10px 40px; /* Un poco más de espacio a los lados */
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: sticky;
+
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  width: 100%; /* 🔥 ESTO FALTABA */
+  
+  z-index: 9999; /* súbelo un poco */
+  
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 

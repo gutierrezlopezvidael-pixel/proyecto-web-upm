@@ -9,71 +9,47 @@
 
 <body>
 
-<header class="menu">
-  <div class="logo-container">
-    <a href="index.html">
-      <img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm">
-    </a>
-    <span class="titulo-upm">Universidad Politécnica Mesoamericana</span>
-  </div>
+<div id="header-container"></div>
 
-   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">
-    ☰
-  </label>
+<!-- ======================================
+BANNER INTERNO (TODAS LAS PÁGINAS)
+====================================== -->
 
-  <nav class="nav-menu" aria-label="Menú principal">
-    <label for="menu-toggle" class="cerrar-menu">✕</label>
-  <ul class="menu-principal">
-  <li><a href="index.html">Inicio</a></li>
+<section class="hero-interno">
 
-  <li class="submenu">
-  <a href="#" class="activo" >Nuestra Universidad ▾</a>
-  <ul class="dropdown">
-    <li><a href="mensaje-del-rector.html">Mensaje del Rector</a></li>
-    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-    <li><a href="mision-vision-valores.html">Misión y Visión </a></li>
-    <li><a href="historia.html">Historia</a></li>
-    <li><a href="organigrama-institucional.html">Organigrama Institucional</a></li>
-    <li><a href="directorio.html"class="activo">Directorio</a></li>
-  </ul>
-</li>
+    <!-- Slider de imágenes -->
+    <div class="slider-fondo">
 
-  <li><a href="carreras.html">Oferta Educativa</a></li>
+        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM">
 
-  <li><a href="admisiones.html">Admisiones</a></li>
+        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM">
 
-  <li><a href="servicios-escolares.html">Servicios Escolares</a></li>
-
- <li class="submenu">
-  <a href="#">Vinculación ▾</a>
-  <ul class="dropdown">
-    <li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
-    <li><a href="conocer.html">Conocer</a></li>
-  </ul>
-</li>
-
-  <li><a href="contact.html">Contacto</a></li>
-</ul>
-</nav>
-
-</header>
-
-<!-- BANNER -->
-<section class="banner">
-    <div class="slider">
-
-        <img src="assets/banner/banner1.jpeg" class="slide active">
-        <img src="assets/banner/banner2.jpeg" class="slide">
-        <img src="assets/banner/banner3.png" class="slide">
+        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM">
 
     </div>
+
+    <!-- Capa oscura -->
+    <div class="overlay-oscuro"></div>
+
+    <!-- Texto del banner -->
+    <div class="hero-contenido">
+
+        <h1>Directorio Institucional</h1>
+
+        <p>
+          Consulta el directorio institucional de la Universidad Politécnica Mesoamericana y encuentra la 
+          información de contacto de las diferentes áreas académicas y administrativas para facilitar la 
+          comunicación con la comunidad universitaria.
+
+        </p>
+
+    </div>
+
 </section>
 
 <main class="contenedor-about">
 
 <section class="seccion directorio">
-<h1>Directorio Institucional</h1>
 
 <!-- RECTORÍA -->
 <h2>Rectoría</h2>
@@ -137,21 +113,34 @@
     <h3>Mtra. Blanca Estela Díaz Marín</h3>
     <p><strong>Secretaria de Administración y Finanzas</strong></p>
     <p><a href="mailto:administrativo@upm.edu.mx">administrativo@upm.edu.mx</a></p>
-    <span class="ext">Ext. 503</span>
+    <span class="ext">Ext. 1003</span>
   </div>
 
   <div class="card-persona">
-    <h3>Lic. Alejandro Hernández Landero</h3>
+    <h3>Lic. José Manuel Mendoza Zetina</h3>
     <p><strong>Contabilidad y Control Presupuestal</strong></p>
     <p><a href="mailto:contabilidad@upm.edu.mx">contabilidad@upm.edu.mx</a></p>
-    <span class="ext">Ext. 501</span>
   </div>
 
   <div class="card-persona">
-    <h3>L.I.A. Luis Alfonso Mosqueda Jiménez</h3>
+    <h3>Lic. Mauricio Valenzuela Aguilar</h3>
+    <p><strong>Recursos Materiales y Servicios Generales</strong></p>
+    <p><a href="mailto:recursos.materiales@upm.edu.mx">recursos.materiales@upm.edu.mx</a></p>
+    <span class="ext">Ext. 1004</span>
+  </div>
+
+  <div class="card-persona">
+    <h3>Dr. Sergio Alejandro Torres Hernández</h3>
+    <p><strong>Recursos Humanos</strong></p>
+    <p><a href="mailto:recursos.humanos@upm.edu.mx">recursos.humanos@upm.edu.mx</a></p>
+    <span class="ext">Ext. 1004</span>
+  </div>
+
+  <div class="card-persona">
+    <h3>Dr. David Salomón de la O Hidalgo</h3>
     <p><strong>Informática Institucional</strong></p>
     <p><a href="mailto:informatica@upm.edu.mx">informatica@upm.edu.mx</a></p>
-    <span class="ext">Ext. 514</span>
+    <span class="ext">Ext. 1011</span>
   </div>
 
 </div>
@@ -159,11 +148,23 @@
 </section>
 </main>
 
-<footer>
-  <p>© 2025 Universidad Politécnica Mesoamericana.</p>
-</footer>
+<div id="footer-container"></div>
+
+
+<!-- =========================
+        BOTÓN WHATSAPP
+========================= -->
+<a href="https://wa.me/529341347639?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
+class="whatsapp-float"
+target="_blank">
+
+<img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
+
+</a>
+
 
 
 <script src="faq.js"></script>
+<script src="js/cargar-componentes.js"></script>
 </body>
 </html>

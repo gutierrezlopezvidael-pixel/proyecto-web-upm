@@ -1,43 +1,104 @@
+// ============================
+// FAQ
+// ============================
+
 const preguntas = document.querySelectorAll(".faq-pregunta");
 
-preguntas.forEach(pregunta => {
-  pregunta.addEventListener("click", () => {
-    const item = pregunta.parentElement;
-    item.classList.toggle("activo");
+if (preguntas.length > 0) {
+  preguntas.forEach(pregunta => {
+    pregunta.addEventListener("click", () => {
+      const item = pregunta.parentElement;
+      item.classList.toggle("activo");
+    });
   });
-});
+}
 
-// ===== SLIDER DE BANNERS =====
+
+// ============================
+// SUBMENU EN CELULAR
+// ============================
+
+const submenus = document.querySelectorAll(".submenu > a");
+
+if (submenus.length > 0) {
+  submenus.forEach(menu => {
+    menu.addEventListener("click", function (e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle("active");
+      }
+    });
+  });
+}
+
+
+// ============================
+// SLIDER AUTOMÁTICO
+// ============================
 
 const slides = document.querySelectorAll(".slide");
 
-let index = 0;
+if (slides.length > 0) {
 
-function cambiarSlide(){
+  let index = 0;
 
-  slides[index].classList.remove("active");
+  function cambiarSlide() {
+    slides[index].classList.remove("active");
 
-  index++;
+    index++;
 
-  if(index >= slides.length){
-    index = 0;
+    if (index >= slides.length) {
+      index = 0;
+    }
+
+    slides[index].classList.add("active");
   }
 
-  slides[index].classList.add("active");
+  setInterval(cambiarSlide, 5000);
 }
 
-setInterval(cambiarSlide, 4000);
 
-document.querySelectorAll(".submenu > a").forEach(menu => {
-menu.addEventListener("click", function(e){
+// ============================
+// CARRUSEL
+// ============================
 
-if(window.innerWidth <= 768){
+const contenedor = document.querySelector(".contenedor-imagenes");
+const btnIzq = document.querySelector(".flecha.izquierda");
+const btnDer = document.querySelector(".flecha.derecha");
 
-e.preventDefault()
+if (contenedor && btnIzq && btnDer) {
 
-this.parentElement.classList.toggle("active")
+  btnDer.addEventListener("click", () => {
+    contenedor.scrollLeft += 320;
+  });
+
+  btnIzq.addEventListener("click", () => {
+    contenedor.scrollLeft -= 320;
+  });
 
 }
 
-})
-})
+
+// ============================
+// VISOR DE IMÁGENES
+// ============================
+
+const imagenesGaleria = document.querySelectorAll(".contenedor-imagenes img");
+const visor = document.getElementById("visorImagen");
+const imagenAmpliada = document.getElementById("imagenAmpliada");
+const cerrarVisor = document.querySelector(".cerrar-visor");
+
+if (imagenesGaleria.length > 0 && visor && imagenAmpliada && cerrarVisor) {
+
+  imagenesGaleria.forEach(img => {
+    img.addEventListener("click", () => {
+      visor.style.display = "flex";
+      imagenAmpliada.src = img.src;
+    });
+  });
+
+  cerrarVisor.addEventListener("click", () => {
+    visor.style.display = "none";
+  });
+
+}

@@ -39,110 +39,38 @@
 
 <body>
 
+<div id="header-container"></div>
+<!-- ======================================
+BANNER INTERNO (TODAS LAS PÁGINAS)
+====================================== -->
 
+<section class="hero-interno">
 
-<!-- =========================
-        HEADER / MENÚ
-========================= -->
-<header class="menu">
+    <!-- Slider de imágenes -->
+    <div class="slider-fondo">
 
-<div class="logo-container">
+        <img class="slide active" src="assets/banner/banner1.jpeg" alt="Campus UPM">
 
-<img src="assets/img/logo-upm.png" alt="Logo UPM" class="logo-upm">
+        <img class="slide" src="assets/banner/banner2.jpeg" alt="Instalaciones UPM">
 
-<span class="titulo-upm">
-Universidad Politécnica Mesoamericana
-</span>
+        <img class="slide" src="assets/banner/banner3.png" alt="Estudiantes UPM">
 
-</div>
+    </div>
 
+    <!-- Capa oscura -->
+    <div class="overlay-oscuro"></div>
 
-<input type="checkbox" id="menu-toggle">
+    <!-- Texto del banner -->
+    <div class="hero-contenido">
 
-<label for="menu-toggle" class="menu-icon">
-☰
-</label>
+        <h1>Quienes Somos</h1>
 
+        <p>
+          Formamos profesionistas con competencias, experiencia práctica y valores, preparados para 
+          integrarse y contribuir al desarrollo del sector productivo y de la sociedad.
+        </p>
 
-<nav class="nav-menu" aria-label="Menú principal">
-
-<label for="menu-toggle" class="cerrar-menu">✕</label>
-
-<ul class="menu-principal">
-
-<li><a href="index.html">Inicio</a></li>
-
-<li class="submenu">
-
-<a href="#" class="activo">Nuestra Universidad ▾</a>
-
-<ul class="dropdown">
-
-<li><a href="mensaje-del-rector.html">Mensaje del Rector</a></li>
-
-<li>
-<a href="quienes-somos.html" class="activo">
-Quiénes Somos
-</a>
-</li>
-
-<li><a href="mision-vision-valores.html">Misión y Visión</a></li>
-
-<li><a href="historia.html">Historia</a></li>
-
-<li><a href="organigrama-institucional.html">Organigrama Institucional</a></li>
-
-<li><a href="directorio.html">Directorio</a></li>
-
-</ul>
-
-</li>
-
-<li><a href="carreras.html">Oferta Educativa</a></li>
-
-<li><a href="admisiones.html">Admisiones</a></li>
-
-<li><a href="servicios-escolares.html">Servicios Escolares</a></li>
-
-
-<li class="submenu">
-
-<a href="#">Vinculación ▾</a>
-
-<ul class="dropdown">
-
-<li><a href="bolsa-trabajo.html">Bolsa de trabajo</a></li>
-
-<li><a href="conocer.html">Conocer</a></li>
-
-</ul>
-
-</li>
-
-<li><a href="contact.html">Contacto</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-
-
-<!-- =========================
-        BANNER
-========================= -->
-<section class="banner">
-
-<div class="slider">
-
-<img src="assets/banner/banner1.jpeg" class="slide active">
-
-<img src="assets/banner/banner2.jpeg" class="slide">
-
-<img src="assets/banner/banner3.png" class="slide">
-
-</div>
+    </div>
 
 </section>
 
@@ -154,7 +82,6 @@ Quiénes Somos
 <!-- INTRODUCCIÓN -->
 <section class="seccion">
 
-<h1>Quiénes Somos</h1>
 
 <p>
 Las universidades politécnicas buscan responder a las necesidades sociales de formar profesionistas de manera integral, dotándolos de las competencias necesarias para integrarse a cualquier ambiente de trabajo.
@@ -266,77 +193,14 @@ En el modelo educativo de las universidades politécnicas se plantea la formaci�
 
 </main>
 
-<!-- =========================
-        FOOTER
-========================= -->
-<footer>
-
-<section>
-
-<h3>Dirección</h3>
-
-<p>
-Carretera Tenosique – El Ceibo Km 43.5 S/N,
-Colonia Agrícola Sueños de Oro,
-Tenosique, Tabasco, México.
-C.P. 86906
-</p>
-
-</section>
-
-
-<section>
-
-<h3>Contacto</h3>
-
-<p>
-Teléfono Institucional: +52 934 342 46 71<br>
-Difusión: +52 934 262 48 44<br>
-Email: difusion@upm.edu.mx
-</p>
-
-</section>
-
-
-<section class="footer-redes">
-
-<h3>Redes Sociales</h3>
-
-<div class="redes-iconos">
-
-<a href="https://www.facebook.com/upmdifusion" target="_blank">
-<img src="assets/icon/facebook.png" alt="Facebook UPM">
-</a>
-
-<a href="https://www.instagram.com/politecnica__mesoamericana/" target="_blank">
-<img src="assets/icon/instagram.png" alt="Instagram UPM">
-</a>
-
-<a href="https://x.com/upmcomunicacion" target="_blank">
-<img src="assets/icon/x.png" alt="X UPM">
-</a>
-
-</div>
-
-</section>
-
-<p>
-© 2025 Universidad Politécnica Mesoamericana.
-Todos los derechos reservados.
-</p>
-
-</footer>
-
-
+<div id="footer-container"></div>
 
 <!-- =========================
         BOTÓN WHATSAPP
 ========================= -->
-<a
-href="https://wa.me/5219342624844?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
+<a href="https://wa.me/529341347639?text=Hola%20quiero%20informes%20sobre%20las%20inscripciones"
 class="whatsapp-float"
-target="_blank"
-aria-label="WhatsApp UPM">
+target="_blank">
 
 <img src="assets/icon/whatsapp.png" alt="WhatsApp UPM">
 
@@ -348,6 +212,7 @@ aria-label="WhatsApp UPM">
         JAVASCRIPT
 ========================= -->
 <script src="faq.js"></script>
+<script src="js/cargar-componentes.js"></script>
 
 </body>
 </html>
